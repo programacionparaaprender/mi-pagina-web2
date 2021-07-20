@@ -70,11 +70,11 @@ https://medium.com/tech-insights/how-to-deploy-angular-apps-to-github-pages-gh-p
 
 npm i angular-cli-ghpages --save-dev
 
-ng build --prod --base-href "https://programacionparaaprender.github.io/angularroute/"
+ng build --prod --base-href "https://programacionparaaprender.github.io/mi-pagina-web2/"
 
-npx angular-cli-ghpages —dir=dist/angularroute
+npx angular-cli-ghpages —dir=dist/mi-pagina-web2
 
-ng build --base-href=/angularroute/
+ng build --base-href=/mi-pagina-web2/
 
 ng build --base-href=/
 
@@ -87,11 +87,11 @@ ng add angular-cli-ghpages@next
 si no funciona
 ng add angular-cli-ghpages
 
-ng deploy --repo=https://github.com/programacionparaaprender/angularroute.git
+ng deploy --repo=https://github.com/programacionparaaprender/mi-pagina-web2.git
 
 este siempre ejecutarlo para generar ->
 
-ng deploy --base-href=https://programacionparaaprender.github.io/angularroute/
+ng deploy --base-href=https://programacionparaaprender.github.io/mi-pagina-web2/
 
 ejecutar siempre desde git cmd npm run github
 
