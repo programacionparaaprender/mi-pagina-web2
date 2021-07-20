@@ -12,6 +12,51 @@
         <li class="nav-item active">
           <a class="nav-link" [routerLink]="'/'">Inicio <span class="sr-only">(current)</span></a>
         </li>
+        
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">  Cursos  </a>
+          <ul class="dropdown-menu">
+            <li *ngFor="let curso of cursosjs">
+              <a class="dropdown-item" href="{{curso.href}}"> 
+                {{curso.nombre}}
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">  Proyectos  </a>
+          <ul class="dropdown-menu">
+            <li *ngFor="let curso of proyectos_realizados_luis">
+              <a class="dropdown-item" href="{{curso.href}}"> 
+                {{curso.nombre}}
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">  Agencia  </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="/agencia_empresas">Empresas</a>
+              <a class="dropdown-item" href="/agencia_profesionales">Profesionales</a>
+              <a class="dropdown-item" href="/agencia_emprendedores">Emprendedores</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">  Contactos  </a>
+          <ul class="dropdown-menu">
+            <li *ngFor="let curso of contactosjs">
+              <a class="dropdown-item" href="{{curso.href}}"> 
+                {{curso.nombre}}
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="'/contacto_empresa'">Acerca de</a>
+        </li>
         <li class="nav-item">
         <a class="nav-link" [routerLink]="'/geocerca'">Geocerca</a>
         </li>
@@ -24,24 +69,7 @@
         <li class="nav-item">
           <a class="nav-link" routerLink="/nuevo">Nuevo</a>
         </li>
-        <!-- <li class="nav-item">
-        <a class="nav-link" [routerLink]="'/accounts'"> Accounts</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" [routerLink]="'/create-account'"> Create Account </a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" [routerLink]="'/contacts'"> Contacts </a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" [routerLink]="'/create-contact'"> Create Contact </a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" [routerLink]="'/activities'"> Activities </a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" [routerLink]="'/create-activity'"> Create Activity </a>
-        </li> -->
+
         <li class="nav-item">
         <a class="nav-link" [routerLink]="'/vieja'">Tic Tac Toe</a>
         </li>
@@ -53,9 +81,6 @@
           </li>
           <li class="nav-item" *ngIf="task.nombre=='error'">
             <a class="nav-link" [routerLink]="'/registro'">Registrar</a>
-          </li>
-          <li class="nav-item" *ngIf="task.nombre!='error'">
-            <a class="nav-link" (click)="logout()">Logout</a>
           </li>
       </ul>
     </div>

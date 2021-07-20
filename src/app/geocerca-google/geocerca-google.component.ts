@@ -49,18 +49,7 @@ export class GeocercaGoogleComponent implements OnInit {
     *     { lat: 0,  lng: 10 }
     *   ] */
   constructor(private tioService: TioService, private router: Router,private store: Store<AppState>) { 
-    this.login = this.store.select('login');
-    if(localStorage.getItem('login')){
-      const usuario = JSON.parse(localStorage.getItem('login'))
-      //console.log('login')
-      //console.log(localStorage.getItem('login'))
-      if(usuario.nombre != 'error'){
-        this.router.navigate(['/']);
-      }else{
-        this.router.navigate(['/login']);
-      }
-    } 
-
+    
 
   }
   

@@ -30,7 +30,8 @@ https://www.itsolutionstuff.com/post/install-bootstrap-4-in-angular-9-how-to-add
 https://update.angular.io/
 borrar el node_modules
 
-
+### bootstrap 4
+https://bootstrap-menu.com/_bootstrap4/detail-multilevel.html
 
 ng new angularoutes2
 angular-route

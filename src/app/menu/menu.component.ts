@@ -28,38 +28,188 @@ export class MenuComponent implements OnInit {
   email = 'zddfdfdsfd';
   password = '';
   usuariologeado = false;
+  cursosjs = [
+    {
+        target:"_self",
+        class:"dropdown-item",
+        href:"#/emprender",
+        nombre:"Emprender por internet"
+    },
+    { 
+              target:"_blank", 
+              class:"dropdown-item", 
+              href:"https://www.instagram.com/p/CK1OWPGnd3m/",
+              nombre:"Geocercas con el lenguaje kotlin y google maps"
+    },
+    {
+        target:"_blank",
+        class:"dropdown-item",
+        href:"https://www.instagram.com/p/CKrHNDmn-8s/",
+        nombre:"Geocerca Ionic"
+    },
+  ];
+  proyectos_realizados_luis = [
+      
+    {
+        id:1,
+        href:"https://www.facebook.com/Ricana-Tours-107912725995677/",
+        src:"proyectos/ricana-tours.svg" ,
+        nombre:"Aplicación web con codeigniter en ricana tours",
+        tecnologia:[
+            {
+                id:1,
+                nombre:"bash",
+                porcentaje:10,
+            },
+            {
+                id:2,
+                nombre:"php",
+                porcentaje:10,
+            },
+            {
+                id:3,
+                nombre:"javascript",
+                porcentaje:10,
+            },
+            {
+                id:4,
+                nombre:"css",
+                porcentaje:10,
+            },
+            {
+                id:5,
+                nombre:"bootstrap",
+                porcentaje:10,
+            },
+            {
+                id:6,
+                nombre:"jquery",
+                porcentaje:10,
+            },
+            {
+                id:7,
+                nombre:"codeigniter",
+                porcentaje:10,
+            },
+            {
+                id:8,
+                nombre:"git",
+                porcentaje:20,
+            },
+            {
+                id:9,
+                nombre:"UML",
+                porcentaje:10,
+            },
+        ],
+    },
+    {
+        id:2,
+        href:"https://www.facebook.com/Ricana-Tours-107912725995677/",
+        src:"proyectos/ricana-tours.svg", 
+        nombre:"Aplicación web con cakePHP en ricana tours",
+        tecnologia:[
+            {
+                nombre:"bash",
+                porcentaje:60,
+            },
+        ],
+    },
+    {
+        id:3,
+        href:"https://www.facebook.com/PdvsaROriente/",
+        src:"proyectos/pdvsa.svg",
+        nombre:"Migración del servicio de impresión a tecnología tecnología de información libre",
+        tecnologia:[
+            {
+                id:1,
+                nombre:"bash",
+                porcentaje:40,
+            },
+            {
+                id:2,
+                nombre:"samba",
+                porcentaje:20,
+            },
+            {
+                id:3,
+                nombre:"cups",
+                porcentaje:20,
+            },
+            {
+                id:4,
+                nombre:"Debian",
+                porcentaje:20,
+            },
+        ],
+    },
+  ];
+  contactosjs = [
+    {
+        id:1,
+        href:"/contacto_luis",
+        img:"images/Luis_Correa.webp",
+        alt:"Luis",
+        nombre:"Luis Correa",
+        titulo:"Ingeniero en Computación",
+        descripcion:"Desarrollador Semisenior .Net Full Stack",
+        url:"https://www.linkedin.com/in/luis-correa-36477a1b7/"
+    },
+    {
+        id:2,
+        href:"/contacto_percy",
+        img:"images/Percy_Correa.webp",
+        alt:"Percy",
+        nombre:"Percy Correa",
+        titulo:"Ingeniero Civil",
+        descripcion:"Diseño de Planos",
+        url:"https://www.linkedin.com/in/percy-correa-a9a919ba/"
+    },
+    {
+        id:3,
+        href:"/contacto_juan",
+        img:"images/Juan Correa.webp",
+        alt:"Juan",
+        nombre:"Juan Correa",
+        titulo:"Asesor Comercial",
+        descripcion:"Vendedor automotriz",
+        url:"https://www.linkedin.com/in/percy-correa-a9a919ba/"
+    },
+    {
+        id:4,
+        href:"/contacto_yolanda",
+        img:"images/Yolanda_Yancel.webp",
+        alt:"Yolanda",
+        nombre:"Yolanda Yancel",
+        titulo:"Contador Publico",
+        descripcion:"Contador publico, asistente administrativa",
+        url:"https://www.linkedin.com/in/yolanda-yancel-flores-b39817111/"
+    },
+    {
+        id:5,
+        href:"/contacto_patricia",
+        img:"images/Patricia Correa.webp",
+        alt:"Patricia",
+        nombre:"Patricia Correa",
+        titulo:"Medico Cirujano",
+        descripcion:"Medico Cirujano",
+        url:"https://www.linkedin.com/in/yolanda-yancel-flores-b39817111/"
+    },
+    {
+        id:6,
+        href:"/contacto_ana",
+        img:"images/Ana Correa.webp",
+        alt:"Patricia",
+        nombre:"Ana Correa",
+        titulo:"Ingenieria Quimica",
+        descripcion:"Ingenieria Quimica",
+        url:"https://www.linkedin.com/in/yolanda-yancel-flores-b39817111/"
+    },
+  ];
   constructor(location: Location, private router: Router, private store: Store<AppState>) {
-    this.login = this.store.select('login');
-    if(localStorage.getItem('login')){
-      const usuario = JSON.parse(localStorage.getItem('login'))
-      if(usuario.nombre != 'error'){
-        this.usuariologeado = true;
-      }else{
-        this.usuariologeado = false;
-        
-        console.log('location')
-        //console.log(this.router.url)
-        //console.log(this.activatedRoute.url);
-        //this.router.navigate(['/login']);
-      }
-    }else{
+    
+  }
 
-    }
-  }
-  /* ngAfterViewInit() {
-    this.usuariologeado = this.child.usuariologeado
-  } */
-  logout() {
-    const usuario: Tio = {
-      id: 1,
-      nombre: "error",
-      password: "123456",
-      email: "error@gmail.com"
-    }
-    this.usuariologeado = false;
-    this.store.dispatch(new TaskActions.InicioUsuario(usuario) )
-    this.router.navigate(['/login']);
-  }
 
   ngOnInit() {
   }
