@@ -57,22 +57,6 @@
         <li class="nav-item">
           <a class="nav-link" [routerLink]="'/contacto_empresa'">Acerca de</a>
         </li>
-        <li class="nav-item">
-        <a class="nav-link" [routerLink]="'/geocerca'">Geocerca</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="'/tasks'">Estados persistentes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/lista">Listar usuarios</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/nuevo">Nuevo</a>
-        </li>
-
-        <li class="nav-item">
-        <a class="nav-link" [routerLink]="'/vieja'">Tic Tac Toe</a>
-        </li>
       </ul>
       <ul class="nav navbar-nav navbar-right" *ngFor="let task of login | async">
           <!-- <h3>name: {{ task.nombre }} </h3> -->

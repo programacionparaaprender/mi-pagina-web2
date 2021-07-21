@@ -32,7 +32,7 @@ export class MenuComponent implements OnInit {
     {
         target:"_self",
         class:"dropdown-item",
-        href:"#/emprender",
+        href:"/emprender",
         nombre:"Emprender por internet"
     },
     { 

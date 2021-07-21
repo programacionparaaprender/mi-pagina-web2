@@ -13,6 +13,10 @@ import { LoginUsuariosComponent } from './tio/login-usuarios/login-usuarios.comp
 
 import { RegistrarUsuariosComponent } from './tio/registrar-usuarios/registrar-usuarios.component';
 
+import { EmprenderInternetComponent } from './emprender-internet/emprender-internet.component';
+
+import { AgenciaEmpresasComponent } from './agencia-empresas/agencia-empresas.component';
+
 import { Tio } from './models/tio'
 
 var usuario: Tio = {
@@ -22,15 +26,15 @@ var usuario: Tio = {
   email: "error@gmail.com"
 }
 
-if(localStorage.getItem('login')){
-  usuario = JSON.parse(localStorage.getItem('login'))
-  //console.log('login')
-  //console.log(localStorage.getItem('login'))
-}
 
 const routes: Routes = [
   { path: '',  redirectTo: '/geocerca', pathMatch: 'full' },
-  {path: 'login' , component: LoginUsuariosComponent},
+
+  {path: 'agencia_empresas' , component: AgenciaEmpresasComponent},
+  {path: 'agencia_profesionales' , component: EmprenderInternetComponent},
+  {path: 'agencia_emprendedores' , component: EmprenderInternetComponent},
+
+  {path: 'emprender' , component: EmprenderInternetComponent},
   {path: 'registro' , component: RegistrarUsuariosComponent},
   {
     path: 'vieja' , component: ViejaComponent
