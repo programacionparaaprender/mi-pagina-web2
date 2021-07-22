@@ -83,6 +83,15 @@ import { DetalleTioComponent } from './tio/detalle-tio.component';
 import { ActualizarTioComponent } from './tio/actualizar-tio.component';
 import { LoginUsuariosComponent } from './tio/login-usuarios/login-usuarios.component';
 import { RegistrarUsuariosComponent } from './tio/registrar-usuarios/registrar-usuarios.component';
+
+
+import { EmprenderInternetComponent } from './emprender-internet/emprender-internet.component';
+
+import { AgenciaEmpresasComponent } from './agencia-empresas/agencia-empresas.component';
+
+import { AgenciaProfesionalesComponent } from './agencia-profesionales/agencia-profesionales.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -97,7 +106,10 @@ import { RegistrarUsuariosComponent } from './tio/registrar-usuarios/registrar-u
     DetalleTioComponent,
     LoginUsuariosComponent,
     ActualizarTioComponent,
-    RegistrarUsuariosComponent
+    RegistrarUsuariosComponent,
+    EmprenderInternetComponent,
+    AgenciaEmpresasComponent,
+    AgenciaProfesionalesComponent
   ],
   imports: [
     

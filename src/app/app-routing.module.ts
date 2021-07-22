@@ -17,6 +17,9 @@ import { EmprenderInternetComponent } from './emprender-internet/emprender-inter
 
 import { AgenciaEmpresasComponent } from './agencia-empresas/agencia-empresas.component';
 
+
+import { AgenciaProfesionalesComponent } from './agencia-profesionales/agencia-profesionales.component';
+
 import { Tio } from './models/tio'
 
 var usuario: Tio = {
@@ -31,7 +34,7 @@ const routes: Routes = [
   { path: '',  redirectTo: '/geocerca', pathMatch: 'full' },
 
   {path: 'agencia_empresas' , component: AgenciaEmpresasComponent},
-  {path: 'agencia_profesionales' , component: EmprenderInternetComponent},
+  {path: 'agencia_profesionales' , component: AgenciaProfesionalesComponent},
   {path: 'agencia_emprendedores' , component: EmprenderInternetComponent},
 
   {path: 'emprender' , component: EmprenderInternetComponent},

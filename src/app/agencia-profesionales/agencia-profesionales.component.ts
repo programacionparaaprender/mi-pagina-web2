@@ -14,13 +14,13 @@ import { Tio } from '../models/tio';
 import { TioService } from '../tio/tio.service';
 
 @Component({
-  selector: 'app-emprender-internet',
-  templateUrl: './emprender-internet.component.html',
-  styleUrls: ['./emprender-internet.component.css']
+  selector: 'app-agencia-profesionales',
+  templateUrl: './agencia-profesionales.component.html',
+  styleUrls: ['./agencia-profesionales.component.css']
 })
 
 
-export class EmprenderInternetComponent implements OnInit {
+export class AgenciaProfesionalesComponent implements OnInit {
   emprender_internetjs = [
     {
         id:1,

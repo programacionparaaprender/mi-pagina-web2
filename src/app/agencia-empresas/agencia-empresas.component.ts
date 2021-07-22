@@ -20,15 +20,16 @@ import { TioService } from '../tio/tio.service';
 })
 
 
+
 export class AgenciaEmpresasComponent implements OnInit {
-  emprender_internetjs = [
+    emprender_internetjs = [
     {
         id:1,
         target:"_blank",  
         class:"dropdown-item", 
         href:"https://www.youtube.com/watch?v=1lfbTa32MEk",
         nombre:"Crear un bot para tu página web con chatfuel",
-        src:"proyectos/ricana-tours.svg" ,
+        src:"./assets/proyectos/ricana-tours.svg" ,
     },
     {
         id:2,
@@ -36,14 +37,14 @@ export class AgenciaEmpresasComponent implements OnInit {
         class:"dropdown-item", 
         href:"https://www.udemy.com/course/adp-bonao-facebook-como-herramienta-educativa/learn/lecture/13147022?start=0#overview",
         nombre:"Crea tu página en facebook",
-        src:"proyectos/ricana-tours.svg" ,
+        src:"./assets/proyectos/ricana-tours.svg" ,
     },
-];
+    ];
   trabajo_grado_luis = [
   {
       id:1,
       href:"https://www.facebook.com/PdvsaROriente/",
-      src:"proyectos/pdvsa.svg",
+      src:"./assets/proyectos/pdvsa.svg",
       nombre:"Migración del servicio de impresión a tecnología tecnología de información libre",
       tecnologia:[
           {
@@ -68,13 +69,13 @@ export class AgenciaEmpresasComponent implements OnInit {
           },
       ],
   },
-];
+    ];
     proyectos_realizados_luis = [
     
     {
         id:1,
         href:"https://www.facebook.com/Ricana-Tours-107912725995677/",
-        src:"proyectos/ricana-tours.svg" ,
+        src:"./assets/proyectos/ricana-tours.svg" ,
         nombre:"Aplicación web con codeigniter en ricana tours",
         tecnologia:[
             {
@@ -127,7 +128,7 @@ export class AgenciaEmpresasComponent implements OnInit {
     {
         id:2,
         href:"https://www.facebook.com/Ricana-Tours-107912725995677/",
-        src:"proyectos/ricana-tours.svg", 
+        src:"./assets/proyectos/ricana-tours.svg", 
         nombre:"Aplicación web con cakePHP en ricana tours",
         tecnologia:[
             {
@@ -139,7 +140,7 @@ export class AgenciaEmpresasComponent implements OnInit {
     {
         id:3,
         href:"https://www.facebook.com/PdvsaROriente/",
-        src:"proyectos/pdvsa.svg",
+        src:"./assets/proyectos/pdvsa.svg",
         nombre:"Migración del servicio de impresión a tecnología tecnología de información libre",
         tecnologia:[
             {
@@ -164,13 +165,54 @@ export class AgenciaEmpresasComponent implements OnInit {
             },
         ],
     },
-];
-tecnologia:[];
+    ];
+    proyectos = [
+        {
+            nombre:"Geocercas con el lenguaje kotlin y google maps",
+            imagen:"./assets/proyectos/kotlinmaps.png",
+            url:"https://www.instagram.com/p/CK1OWPGnd3m/"
+        },
+        {
+        nombre:"Geocercas con los frameworks ionic y angular",
+        imagen:"./assets/proyectos/geocercaionic.png",
+        url:"https://www.instagram.com/p/CKrHNDmn-8s/"
+    },
+    {
+        nombre:"Geocercas con los frameworks nativescript, vuejs y google maps api",
+        imagen:"./assets/proyectos/tns-geocerca.png",
+        url:"https://www.instagram.com/p/CK9FdpJH96N/"
+    },
+    ];
+    tecnologia:Array<any>;
 
   constructor(private tioService: TioService, private router: Router,private store: Store<AppState>) { 
     
 
   }
+  
+  obtenerDetalleTrabajoGrado(id): void{
+    console.log('obtenerDetalleTrabajoGrado')
+    var proyecto:any;
+    for(let proyecto2 of this.trabajo_grado_luis){
+            if(proyecto2.id == id){
+                    proyecto = proyecto2;
+            }
+    }
+    this.tecnologia = proyecto.tecnologia;
+  }
+
+  obtenerDetalle(id): void{
+    console.log('obtenerDetalle')
+    var proyecto:any;
+    for(let proyecto2 of this.proyectos_realizados_luis){
+            if(proyecto2.id == id){
+                    proyecto = proyecto2;
+            }
+    }
+    this.tecnologia = proyecto.tecnologia;
+    
+};
+
   
   ngOnInit(): void {
   }
