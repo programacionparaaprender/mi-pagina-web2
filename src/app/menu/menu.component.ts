@@ -147,7 +147,7 @@ export class MenuComponent implements OnInit {
   contactosjs = [
     {
         id:1,
-        href:"/contacto_luis",
+        href:"contacto_luis",
         img:"images/Luis_Correa.webp",
         alt:"Luis",
         nombre:"Luis Correa",
@@ -157,7 +157,7 @@ export class MenuComponent implements OnInit {
     },
     {
         id:2,
-        href:"/contacto_percy",
+        href:"contacto_percy",
         img:"images/Percy_Correa.webp",
         alt:"Percy",
         nombre:"Percy Correa",
@@ -167,7 +167,7 @@ export class MenuComponent implements OnInit {
     },
     {
         id:3,
-        href:"/contacto_juan",
+        href:"contacto_juan",
         img:"images/Juan Correa.webp",
         alt:"Juan",
         nombre:"Juan Correa",
@@ -177,7 +177,7 @@ export class MenuComponent implements OnInit {
     },
     {
         id:4,
-        href:"/contacto_yolanda",
+        href:"contacto_yolanda",
         img:"images/Yolanda_Yancel.webp",
         alt:"Yolanda",
         nombre:"Yolanda Yancel",
@@ -187,7 +187,7 @@ export class MenuComponent implements OnInit {
     },
     {
         id:5,
-        href:"/contacto_patricia",
+        href:"contacto_patricia",
         img:"images/Patricia Correa.webp",
         alt:"Patricia",
         nombre:"Patricia Correa",
@@ -197,7 +197,7 @@ export class MenuComponent implements OnInit {
     },
     {
         id:6,
-        href:"/contacto_ana",
+        href:"contacto_ana",
         img:"images/Ana Correa.webp",
         alt:"Patricia",
         nombre:"Ana Correa",

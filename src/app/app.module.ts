@@ -91,6 +91,9 @@ import { AgenciaEmpresasComponent } from './agencia-empresas/agencia-empresas.co
 
 import { AgenciaProfesionalesComponent } from './agencia-profesionales/agencia-profesionales.component';
 
+import { AgenciaEmprendedoresComponent } from './agencia-emprendedores/agencia-emprendedores.component';
+
+import { ContactoLuisComponent } from './contacto-luis/contacto-luis.component';
 
 @NgModule({
   declarations: [
@@ -109,7 +112,9 @@ import { AgenciaProfesionalesComponent } from './agencia-profesionales/agencia-p
     RegistrarUsuariosComponent,
     EmprenderInternetComponent,
     AgenciaEmpresasComponent,
-    AgenciaProfesionalesComponent
+    AgenciaProfesionalesComponent,
+    AgenciaEmprendedoresComponent,
+    ContactoLuisComponent
   ],
   imports: [
     
