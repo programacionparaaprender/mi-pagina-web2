@@ -36,6 +36,8 @@ import { ContactoPatriciaComponent } from './contacto-patricia/contacto-patricia
 
 import { ContactoAnaComponent } from './contacto-ana/contacto-ana.component';
 
+import { MainComponent } from './main/main.component';
+
 import { Tio } from './models/tio'
 
 var usuario: Tio = {
@@ -47,8 +49,7 @@ var usuario: Tio = {
 
 
 const routes: Routes = [
-  { path: '',  redirectTo: '/geocerca', pathMatch: 'full' },
-
+  { path: '' , component: MainComponent},
   {path: 'agencia_empresas' , component: AgenciaEmpresasComponent},
   {path: 'agencia_profesionales' , component: AgenciaProfesionalesComponent},
   {path: 'agencia_emprendedores' , component: AgenciaEmprendedoresComponent},

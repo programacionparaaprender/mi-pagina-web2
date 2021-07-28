@@ -109,6 +109,10 @@ import { ContactoPatriciaComponent } from './contacto-patricia/contacto-patricia
 
 import { ContactoAnaComponent } from './contacto-ana/contacto-ana.component';
 
+import { MainComponent } from './main/main.component';
+
+import { BannerComponent } from './banner/banner.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -135,7 +139,9 @@ import { ContactoAnaComponent } from './contacto-ana/contacto-ana.component';
     ContactoJuanComponent,
     ContactoYolandaComponent,
     ContactoPatriciaComponent,
-    ContactoAnaComponent
+    ContactoAnaComponent,
+    MainComponent,
+    BannerComponent
   ],
   imports: [
     
