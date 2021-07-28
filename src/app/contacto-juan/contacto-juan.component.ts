@@ -10,20 +10,19 @@ import * as TaskActions from './../store/login.actions';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { Tio } from '../models/tio';
-import { TioService } from '../tio/tio.service';
+
 
 import { experiencia_luis, contactosjs, emprender_internetjs, trabajo_grado_luis, proyectos_realizados_luis, proyectos } from './../app.state';
 
 
 @Component({
-  selector: 'app-contacto-luis',
-  templateUrl: './contacto-luis.component.html',
-  styleUrls: ['./contacto-luis.component.css']
+  selector: 'app-contacto-juan',
+  templateUrl: './contacto-juan.component.html',
+  styleUrls: ['./contacto-juan.component.css']
 })
 
 
-export class ContactoLuisComponent implements OnInit {
+export class ContactoJuanComponent implements OnInit {
     emprender_internetjs = emprender_internetjs;
     contactosjs = contactosjs;
     trabajo_grado_luis = trabajo_grado_luis;
@@ -31,7 +30,7 @@ export class ContactoLuisComponent implements OnInit {
     proyectos_realizados_luis = proyectos_realizados_luis;
     proyectos = proyectos;
     tecnologia:[];
-    constructor(private tioService: TioService, private router: Router,private store: Store<AppState>) { 
+    constructor(private router: Router,private store: Store<AppState>) { 
     
 
     }

@@ -95,6 +95,14 @@ import { AgenciaEmprendedoresComponent } from './agencia-emprendedores/agencia-e
 
 import { ContactoLuisComponent } from './contacto-luis/contacto-luis.component';
 
+import { ContactoPercyComponent } from './contacto-percy/contacto-percy.component';
+
+import { FooterComponent } from './footer/footer.component';
+
+import { ContactoJuanComponent } from './contacto-juan/contacto-juan.component';
+
+import { ContactoEmpresaComponent } from './contacto-empresa/contacto-empresa.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -114,7 +122,11 @@ import { ContactoLuisComponent } from './contacto-luis/contacto-luis.component';
     AgenciaEmpresasComponent,
     AgenciaProfesionalesComponent,
     AgenciaEmprendedoresComponent,
-    ContactoLuisComponent
+    ContactoLuisComponent,
+    ContactoPercyComponent,
+    FooterComponent,
+    ContactoEmpresaComponent,
+    ContactoJuanComponent
   ],
   imports: [
     

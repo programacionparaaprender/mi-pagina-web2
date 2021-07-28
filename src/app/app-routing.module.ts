@@ -24,6 +24,12 @@ import { AgenciaEmprendedoresComponent } from './agencia-emprendedores/agencia-e
 
 import { ContactoLuisComponent } from './contacto-luis/contacto-luis.component';
 
+import { ContactoPercyComponent } from './contacto-percy/contacto-percy.component';
+
+import { ContactoEmpresaComponent } from './contacto-empresa/contacto-empresa.component';
+
+import { ContactoJuanComponent } from './contacto-juan/contacto-juan.component';
+
 import { Tio } from './models/tio'
 
 var usuario: Tio = {
@@ -44,11 +50,13 @@ const routes: Routes = [
   {path: 'emprender' , component: EmprenderInternetComponent},
 
   {path: 'contacto_luis' , component: ContactoLuisComponent},
-  {path: 'contacto_percy' , component: EmprenderInternetComponent},
-  {path: 'contacto_juan' , component: EmprenderInternetComponent},
+  {path: 'contacto_percy' , component: ContactoPercyComponent},
+  {path: 'contacto_juan' , component: ContactoJuanComponent},
   {path: 'contacto_yolanda' , component: EmprenderInternetComponent},
   {path: 'contacto_patricia' , component: EmprenderInternetComponent},
   {path: 'contacto_ana' , component: EmprenderInternetComponent},
+
+  {path: 'contacto_empresa' , component: ContactoEmpresaComponent},
 
   {path: 'registro' , component: RegistrarUsuariosComponent},
   {
