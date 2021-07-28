@@ -1,4 +1,4 @@
-<header class="container-fluid">
+<header class="container-fluid"  style="font-style: italic;">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#/">
       <img src="./assets/images/principal.jpg" width="50" height="50" alt="">
@@ -49,7 +49,7 @@
           <ul class="dropdown-menu">
             <li *ngFor="let curso of contactosjs">
               <a class="dropdown-item" href="{{curso.href}}"> 
-                {{curso.nombre}}
+                {{curso.nombre}} - {{curso.titulo}}
               </a>
             </li>
           </ul>

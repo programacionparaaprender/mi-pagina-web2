@@ -103,6 +103,12 @@ import { ContactoJuanComponent } from './contacto-juan/contacto-juan.component';
 
 import { ContactoEmpresaComponent } from './contacto-empresa/contacto-empresa.component';
 
+import { ContactoYolandaComponent } from './contacto-yolanda/contacto-yolanda.component';
+
+import { ContactoPatriciaComponent } from './contacto-patricia/contacto-patricia.component';
+
+import { ContactoAnaComponent } from './contacto-ana/contacto-ana.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -126,7 +132,10 @@ import { ContactoEmpresaComponent } from './contacto-empresa/contacto-empresa.co
     ContactoPercyComponent,
     FooterComponent,
     ContactoEmpresaComponent,
-    ContactoJuanComponent
+    ContactoJuanComponent,
+    ContactoYolandaComponent,
+    ContactoPatriciaComponent,
+    ContactoAnaComponent
   ],
   imports: [
     

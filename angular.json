@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angularrouter",
+            "outputPath": "dist/mi-pagina-web2",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -131,7 +131,7 @@
       }
     }
   },
-  "defaultProject": "angularrouter",
+  "defaultProject": "mi-pagina-web2",
   "cli": {
     "analytics": "10bb4714-59ae-463c-99cf-28f7465bd03f"
   }

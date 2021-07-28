@@ -30,6 +30,12 @@ import { ContactoEmpresaComponent } from './contacto-empresa/contacto-empresa.co
 
 import { ContactoJuanComponent } from './contacto-juan/contacto-juan.component';
 
+import { ContactoYolandaComponent } from './contacto-yolanda/contacto-yolanda.component';
+
+import { ContactoPatriciaComponent } from './contacto-patricia/contacto-patricia.component';
+
+import { ContactoAnaComponent } from './contacto-ana/contacto-ana.component';
+
 import { Tio } from './models/tio'
 
 var usuario: Tio = {
@@ -52,9 +58,9 @@ const routes: Routes = [
   {path: 'contacto_luis' , component: ContactoLuisComponent},
   {path: 'contacto_percy' , component: ContactoPercyComponent},
   {path: 'contacto_juan' , component: ContactoJuanComponent},
-  {path: 'contacto_yolanda' , component: EmprenderInternetComponent},
-  {path: 'contacto_patricia' , component: EmprenderInternetComponent},
-  {path: 'contacto_ana' , component: EmprenderInternetComponent},
+  {path: 'contacto_yolanda' , component: ContactoYolandaComponent},
+  {path: 'contacto_patricia' , component: ContactoPatriciaComponent},
+  {path: 'contacto_ana' , component: ContactoAnaComponent},
 
   {path: 'contacto_empresa' , component: ContactoEmpresaComponent},
 
