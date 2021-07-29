@@ -6,6 +6,27 @@ export interface AppState {
   readonly login: Tio[];
 }
 
+export const cursosjs = [
+    {
+        target:"_self",
+        class:"dropdown-item",
+        href:"/emprender",
+        nombre:"Emprender por internet"
+    },
+    { 
+              target:"_blank", 
+              class:"dropdown-item", 
+              href:"https://www.instagram.com/p/CK1OWPGnd3m/",
+              nombre:"Geocercas con el lenguaje kotlin y google maps"
+    },
+    {
+        target:"_blank",
+        class:"dropdown-item",
+        href:"https://www.instagram.com/p/CKrHNDmn-8s/",
+        nombre:"Geocerca Ionic"
+    },
+  ];
+
 export const ventas_madrejs = [
     {
         id:1,
@@ -184,7 +205,7 @@ export const contactosjs = [
       nombre:"Juan Correa",
       titulo:"Asesor Comercial",
       descripcion:"Vendedor automotriz",
-      url:"https://www.linkedin.com/in/percy-correa-a9a919ba/"
+      url:"#"
   },
   {
       id:4,
@@ -216,6 +237,16 @@ export const contactosjs = [
       descripcion:"Ingenieria Quimica",
       url:"https://www.linkedin.com/in/yolanda-yancel-flores-b39817111/"
   },
+  {
+    id:7,
+    href:"contacto_jermany",
+    img:"./assets/images/Jermany Avile.PNG",
+    alt:"Jermany",
+    nombre:"Jermany Avile",
+    titulo:"Administración",
+    descripcion:"Administración",
+    url:"#"
+},
 ];
 
 export const emprender_internetjs = [

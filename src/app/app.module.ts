@@ -109,6 +109,8 @@ import { ContactoPatriciaComponent } from './contacto-patricia/contacto-patricia
 
 import { ContactoAnaComponent } from './contacto-ana/contacto-ana.component';
 
+import { ContactoJermanyComponent } from './contacto-jermany/contacto-jermany.component';
+
 import { MainComponent } from './main/main.component';
 
 import { BannerComponent } from './banner/banner.component';
@@ -140,6 +142,7 @@ import { BannerComponent } from './banner/banner.component';
     ContactoYolandaComponent,
     ContactoPatriciaComponent,
     ContactoAnaComponent,
+    ContactoJermanyComponent,
     MainComponent,
     BannerComponent
   ],

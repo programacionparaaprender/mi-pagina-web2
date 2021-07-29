@@ -36,6 +36,9 @@ import { ContactoPatriciaComponent } from './contacto-patricia/contacto-patricia
 
 import { ContactoAnaComponent } from './contacto-ana/contacto-ana.component';
 
+
+import { ContactoJermanyComponent } from './contacto-jermany/contacto-jermany.component';
+
 import { MainComponent } from './main/main.component';
 
 import { Tio } from './models/tio'
@@ -62,7 +65,7 @@ const routes: Routes = [
   {path: 'contacto_yolanda' , component: ContactoYolandaComponent},
   {path: 'contacto_patricia' , component: ContactoPatriciaComponent},
   {path: 'contacto_ana' , component: ContactoAnaComponent},
-
+  {path: 'contacto_jermany' , component: ContactoJermanyComponent},
   {path: 'contacto_empresa' , component: ContactoEmpresaComponent},
 
   {path: 'registro' , component: RegistrarUsuariosComponent},

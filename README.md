@@ -105,6 +105,15 @@ ng build --base-href=/
 
 ### pasos para publicar con angular-cli-ghpages
 https://www.npmjs.com/package/angular-cli-ghpages
+ng add angular-cli-ghpages@next
+si no funciona
+ng add angular-cli-ghpages
+npm install angular-cli-ghpages@1.0.0-rc.1
+
+
+ng add @angular/fire
+  ng add @azure/ng-deploy
+  ng add @zeit/ng-deploy
 
 ahora ya finalizado cmd git
 npm run github
@@ -113,9 +122,7 @@ hacer todo desde git batch
 
 
 
-ng add angular-cli-ghpages@next
-si no funciona
-ng add angular-cli-ghpages
+
 
 ng deploy --repo=https://github.com/programacionparaaprender/mi-pagina-web2.git
 
