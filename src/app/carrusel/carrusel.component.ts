@@ -4,13 +4,13 @@ import { serviciosjs, cursosjs, experiencia_luis, contactosjs, emprender_interne
 
 
 @Component({
-  selector: 'app-servicios-contacto',
-  templateUrl: './servicios-contacto.component.html',
-  styleUrls: ['./servicios-contacto.component.css']
+  selector: 'app-carrusel',
+  templateUrl: './carrusel.component.html',
+  styleUrls: ['./carrusel.component.css']
 })
 
 
-export class ServiciosContactoComponent implements OnInit {
+export class CarruselComponent implements OnInit {
     servicios = serviciosjs;
     constructor() { 
     

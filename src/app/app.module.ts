@@ -59,6 +59,14 @@ import { MainComponent } from './main/main.component';
 
 import { BannerComponent } from './banner/banner.component';
 
+import { ServiciosContactoComponent } from './servicios-contacto/servicios-contacto.component';
+
+import { CarruselComponent } from './carrusel/carrusel.component';
+
+import { NosotrosComponent } from './nosotros/nosotros.component';
+
+import { ProyectosComponent } from './proyectos/proyectos.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -79,7 +87,11 @@ import { BannerComponent } from './banner/banner.component';
     ContactoAnaComponent,
     ContactoJermanyComponent,
     MainComponent,
-    BannerComponent
+    BannerComponent,
+    ServiciosContactoComponent,
+    CarruselComponent,
+    NosotrosComponent,
+    ProyectosComponent
   ],
   imports: [
     

@@ -1,25 +1,44 @@
 <style>
-  
-    .banner{
-      background: url(./assets/images/banner\ web2.jpg);
-      height: 30rem;
-      width: 100%;
-    }
-    
-    </style>
-    <div class="container-fluid">
-      <div class="jumbotron p-0">
-            <div class="banner">
-              <h2 
-                style="color:white;font-weight: bold; font-style: italic; display: flex; justify-content: center;align-items: center;">
-                <p>
-                  Promoción y desarrollo web de aplicaciones de calidad
-                </p>
-                <p>
-    
-                </p>
-              </h2>
-            </div>
-            
-    </div>
-    </div>
+  .cards {
+   transition: all 0.2s ease;
+   cursor: pointer
+   }
+
+   .cards:hover {
+       box-shadow: 5px 6px 6px 2px #e9ecef;
+       transform: scale(1.1)
+   }
+</style>
+<section class="container-fluid">
+   <br>
+   <hr>
+<h3 style="font-style: italic;">Nuestros servicios profesionales</h3>
+<p style="font-style: italic;">Diseño, desarrollo y creación de aplicaciones web en Programación para aprender - Blog personales, Comunidades o Empresas. 
+</p>
+<div class="row">
+   <div  
+       class="col-sm-6 col-md-3 py-2"
+       *ngFor="let contacto of servicios">
+       <div 
+           
+           style="height: 14rem;overflow: hidden;font-style: italic;" 
+           class="card caja">
+           <div class="card-body">
+               <a 
+                   
+                   target="_blank" 
+                   data-toggle="tooltip"
+                   data-placement="top"
+                   title="{{contacto.descripcion}}"
+                   style="text-decoration: none !important;color:black !important;"
+                   href="{{contacto.url}}">
+                   
+                       <h3>{{contacto.nombre}}</h3>
+                       <p>{{contacto.descripcion}}</p>
+                   
+               </a>
+           </div>
+   </div>
+   </div> 
+</div>
+</section>

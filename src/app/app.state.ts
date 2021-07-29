@@ -5,7 +5,97 @@ export interface AppState {
   readonly tios: Tio[];
   readonly login: Tio[];
 }
-
+export const serviciosjs = [
+    {
+        nombre:"Asesoria para avanzar y crecer en las redes sociales",
+        descripcion:"Tips y estrategias para crecer y monetizar en las redes sociales."
+    },
+    {
+        nombre:"Instalación y configuración de servidores",
+        descripcion:"Configuración de DNS, Directorio Activo, Impresión, Web, FTP."
+    },
+    {
+        id:"fondo1",
+        class:"carousel-item active",
+        data_bs_interval:"2000",
+        nombre:"Diseño y Desarrollo web",
+        descripcion:"Diseño, desarrollo y creación de aplicaciones web.",
+        alt:"des1"
+    },
+{
+    id:"fondo2",
+    class:"carousel-item",
+    nombre:"Diseño de app para ventas online",
+    descripcion:"Diseño, desarrollo y creación de aplicativo para ventas online, para poder vender productos por internet.",
+    alt:"des2"
+},
+{
+    id:"fondo3",
+    class:"carousel-item",
+    nombre:"eMarketing Digital",
+    descripcion:"La publicidad por correo o email comercial, es enviar un mensaje comercial directamente utilizando como canal el correo electrónico. Envía a un cliente potencial anuncios, peticiones de negocios, solicitar ventas o donaciones publicidad.",
+    alt:"des3"
+},
+{
+    id:"fondo4",
+    class:"carousel-item",
+    nombre:"Posicionamiento en buscadores",
+    descripcion:"Posicionamiento en buscadores, optimización en motores de búsqueda o SEO, mejorar el posicionamiento de un sitio web en la lista de resultados de Google, Bing, u otros buscadores de internet.",
+    alt:"des4"
+},
+{
+    id:"fondo5",
+    class:"carousel-item",
+    nombre:"SEO & SEM & SMM & Analítica",
+    descripcion:"Mercadotecnia en buscadores web (SEM) promovemos el contenido digital para aumentar la visibilidad y posicionamiento en las páginas de resultados del motor de búsqueda. El posicionamiento en motores de búsqueda (SEO), móviles.",
+    alt:"des5"
+},
+{
+    id:"fondo5",
+    class:"carousel-item",
+    nombre:"SMM",
+    descripcion:"Social Media Marqueting (SMM) mercadotecnia viral para crear una idea, posicionar una marca, incrementar la visibilidad e incluso aumentar las ventas de productos.",
+    alt:"des5"
+},
+{
+    id:"fondo6",
+    class:"carousel-item",
+    nombre:"Diseño Gráfico",
+    descripcion:"Diseño y creación de logotipos, imagen corporativa, branding, diseño de impresión, rebranding, creamos diseño gráfico para aplicaciones web.",
+    alt:"des6"
+},
+{
+    id:"fondo7",
+    class:"carousel-item",
+    nombre:"Diseño y Desarrollo Aplicativos Móviles",
+    descripcion:"Diseño, desarrollo y creación de aplicaciones móviles para Android.",
+    alt:"des7"
+},
+{
+    class:"carousel-item",
+    nombre:"Mantenimiento y gestión de aplicaciones",
+    descripcion:"Servicio, soporte y mantenimiento  de escritorio, móviles y web.",
+    alt:"des8"
+},
+{
+    class:"carousel-item",
+    nombre:"Alojamiento web",
+    descripcion:"Alojamiento web (hosting) para poder almacenar información, imágenes, vídeo, o cualquier contenido accesible vía web.",
+    alt:"des9"
+},
+{
+    nombre:"Diseño responsive",
+    descripcion:"Adaptable a todas las pantallas: pc, laptop, tabletas y smartphone.",
+},
+{
+    nombre:"Certificado SSL",
+    descripcion:"Tus usuarios pueden navegar de manera segura.",
+},
+{
+    nombre:"Redes sociales",
+    descripcion:"Integración a redes sociales y botón de whatsapp."
+},
+];
 export const cursosjs = [
     {
         target:"_self",
@@ -297,14 +387,66 @@ export const trabajo_grado_luis = [
           },
       ],
   },
-    ];
-    export const proyectos_realizados_luis = [
-    
+];
+export const proyectos_realizados_luis = [
     {
         id:1,
-        href:"https://www.facebook.com/Ricana-Tours-107912725995677/",
+        href:"#",
         src:"./assets/proyectos/ricana-tours.svg" ,
-        nombre:"Aplicación web con codeigniter en ricana tours",
+        nombre:"Aplicación web con primefaces para venta de boletos de viaje",
+        tecnologia:[
+            {
+                id:2,
+                nombre:"java",
+                porcentaje:10,
+            },
+            {
+                id:3,
+                nombre:"javascript",
+                porcentaje:10,
+            },
+            {
+                id:4,
+                nombre:"css",
+                porcentaje:10,
+            },
+            {
+                id:5,
+                nombre:"bootstrap",
+                porcentaje:10,
+            },
+            {
+                id:6,
+                nombre:"jquery",
+                porcentaje:10,
+            },
+            {
+                id:7,
+                nombre:"primefaces",
+                porcentaje:10,
+            },
+            {
+                id:7,
+                nombre:"springframework",
+                porcentaje:10,
+            },
+            {
+                id:8,
+                nombre:"sqlserver",
+                porcentaje:10,
+            },
+            {
+                id:9,
+                nombre:"git",
+                porcentaje:20,
+            }
+        ],
+    },
+    {
+        id:2,
+        href:"#",
+        src:"./assets/proyectos/ricana-tours.svg" ,
+        nombre:"Aplicación web con laravel para clinica",
         tecnologia:[
             {
                 id:1,
@@ -338,69 +480,117 @@ export const trabajo_grado_luis = [
             },
             {
                 id:7,
-                nombre:"codeigniter",
+                nombre:"laravel",
                 porcentaje:10,
             },
             {
                 id:8,
                 nombre:"git",
                 porcentaje:20,
-            },
-            {
-                id:9,
-                nombre:"UML",
-                porcentaje:10,
-            },
+            }
         ],
     },
-    {
-        id:2,
-        href:"https://www.facebook.com/Ricana-Tours-107912725995677/",
-        src:"./assets/proyectos/ricana-tours.svg", 
-        nombre:"Aplicación web con cakePHP en ricana tours",
-        tecnologia:[
-            {
-                nombre:"bash",
-                porcentaje:60,
-            },
-        ],
-    },
-    {
-        id:3,
-        href:"https://www.facebook.com/PdvsaROriente/",
-        src:"./assets/proyectos/pdvsa.svg",
-        nombre:"Migración del servicio de impresión a tecnología tecnología de información libre",
-        tecnologia:[
-            {
-                id:1,
-                nombre:"bash",
-                porcentaje:40,
-            },
-            {
-                id:2,
-                nombre:"samba",
-                porcentaje:20,
-            },
-            {
-                id:3,
-                nombre:"cups",
-                porcentaje:20,
-            },
-            {
-                id:4,
-                nombre:"Debian",
-                porcentaje:20,
-            },
-        ],
-    },
-    ];
-    export const proyectos = [
+{
+    id:3,
+    href:"https://www.facebook.com/Ricana-Tours-107912725995677/",
+    src:"./assets/proyectos/ricana-tours.svg" ,
+    nombre:"Aplicación web con codeigniter en ricana tours",
+    tecnologia:[
         {
-            nombre:"Geocercas con el lenguaje kotlin y google maps",
-            imagen:"./assets/proyectos/kotlinmaps.png",
-            url:"https://www.instagram.com/p/CK1OWPGnd3m/"
+            id:1,
+            nombre:"bash",
+            porcentaje:10,
         },
         {
+            id:2,
+            nombre:"php",
+            porcentaje:10,
+        },
+        {
+            id:3,
+            nombre:"javascript",
+            porcentaje:10,
+        },
+        {
+            id:4,
+            nombre:"css",
+            porcentaje:10,
+        },
+        {
+            id:5,
+            nombre:"bootstrap",
+            porcentaje:10,
+        },
+        {
+            id:6,
+            nombre:"jquery",
+            porcentaje:10,
+        },
+        {
+            id:7,
+            nombre:"codeigniter",
+            porcentaje:10,
+        },
+        {
+            id:8,
+            nombre:"git",
+            porcentaje:20,
+        },
+        {
+            id:9,
+            nombre:"UML",
+            porcentaje:10,
+        },
+    ],
+},
+{
+    id:4,
+    href:"https://www.facebook.com/Ricana-Tours-107912725995677/",
+    src:"./assets/proyectos/ricana-tours.svg", 
+    nombre:"Aplicación web con cakePHP en ricana tours",
+    tecnologia:[
+        {
+            nombre:"bash",
+            porcentaje:60,
+        },
+    ],
+},
+{
+    id:5,
+    href:"https://www.facebook.com/PdvsaROriente/",
+    src:"./assets/proyectos/pdvsa.svg",
+    nombre:"Migración del servicio de impresión a tecnología tecnología de información libre",
+    tecnologia:[
+        {
+            id:1,
+            nombre:"bash",
+            porcentaje:40,
+        },
+        {
+            id:2,
+            nombre:"samba",
+            porcentaje:20,
+        },
+        {
+            id:3,
+            nombre:"cups",
+            porcentaje:20,
+        },
+        {
+            id:4,
+            nombre:"Debian",
+            porcentaje:20,
+        },
+    ],
+},
+];
+export const proyectos = [
+    {
+        nombre:"Geocercas con el lenguaje kotlin y google maps",
+        imagen:"./assets/proyectos/kotlinmaps.png",
+        url:"https://www.instagram.com/p/CK1OWPGnd3m/"
+    },
+    {
         nombre:"Geocercas con los frameworks ionic y angular",
         imagen:"./assets/proyectos/geocercaionic.png",
         url:"https://www.instagram.com/p/CKrHNDmn-8s/"
@@ -410,4 +600,4 @@ export const trabajo_grado_luis = [
         imagen:"./assets/proyectos/tns-geocerca.png",
         url:"https://www.instagram.com/p/CK9FdpJH96N/"
     },
-    ];
+];
