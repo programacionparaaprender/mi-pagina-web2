@@ -13,7 +13,7 @@ platformBrowserDynamic().bootstrapModule(AppModule)
 
 
   // main.ts persisted
-import {
+/* import {
   getAllDataFromLocalForage,
   default as localForage,
 } from 'ngrx-store-persist';
@@ -31,4 +31,4 @@ getAllDataFromLocalForage({
   platformBrowserDynamic()
     .bootstrapModule(AppModule)
     .catch(err => console.log(err));
-});
+}); */

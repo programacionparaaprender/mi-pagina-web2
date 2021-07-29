@@ -6,8 +6,7 @@ import { AgmCoreModule, LatLng, LatLngLiteral, PolyMouseEvent } from '@agm/core'
 import { Router } from '@angular/router';
 
 
-import * as TaskActions from './../store/login.actions';
-import { Store } from '@ngrx/store';
+
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 

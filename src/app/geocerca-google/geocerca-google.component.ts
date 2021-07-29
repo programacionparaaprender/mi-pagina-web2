@@ -6,12 +6,11 @@ import { AgmCoreModule, LatLng, LatLngLiteral, PolyMouseEvent } from '@agm/core'
 import { Router } from '@angular/router';
 
 import { AppState } from './../app.state';
-import * as TaskActions from './../store/login.actions';
-import { Store } from '@ngrx/store';
+
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Tio } from '../models/tio';
-import { TioService } from '../tio/tio.service';
+
 
 @Component({
   selector: 'app-geocerca-google',
@@ -48,7 +47,7 @@ export class GeocercaGoogleComponent implements OnInit {
     *     { lat: 10, lng: 10 },
     *     { lat: 0,  lng: 10 }
     *   ] */
-  constructor(private tioService: TioService, private router: Router,private store: Store<AppState>) { 
+  constructor(private router: Router) { 
     
 
   }

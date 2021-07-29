@@ -1,14 +1,13 @@
 import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 
 import { AppState } from './../app.state';
-import * as TaskActions from './../store/login.actions';
-import { Store } from '@ngrx/store';
+
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Tio } from '../models/tio';
 import { ActivatedRoute, Router } from '@angular/router';
 
-import { LoginUsuariosComponent } from '../tio/login-usuarios/login-usuarios.component';
+
 
 import { Location } from "@angular/common";
 
@@ -35,7 +34,7 @@ export class MenuComponent implements OnInit {
   cursosjs = cursosjs;
   proyectos_realizados_luis = proyectos_realizados_luis;
   contactosjs = contactosjs;
-  constructor(location: Location, private router: Router, private store: Store<AppState>) {
+  constructor(location: Location, private router: Router) {
     
   }
 

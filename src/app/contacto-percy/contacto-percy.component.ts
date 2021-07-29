@@ -6,8 +6,6 @@ import { AgmCoreModule, LatLng, LatLngLiteral, PolyMouseEvent } from '@agm/core'
 import { Router } from '@angular/router';
 
 import { AppState } from './../app.state';
-import * as TaskActions from './../store/login.actions';
-import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
@@ -30,7 +28,7 @@ export class ContactoPercyComponent implements OnInit {
     proyectos_realizados_luis = proyectos_realizados_luis;
     proyectos = proyectos;
     tecnologia:[];
-    constructor(private router: Router,private store: Store<AppState>) { 
+    constructor(private router: Router) { 
     
 
     }
