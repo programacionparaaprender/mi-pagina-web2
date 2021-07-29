@@ -1,72 +1,86 @@
-<header class="container-fluid"  style="font-style: italic;">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#/">
-      <img src="./assets/images/principal.jpg" width="50" height="50" alt="">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" [routerLink]="'/'">Inicio <span class="sr-only">(current)</span></a>
-        </li>
-        
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">  Cursos  </a>
-          <ul class="dropdown-menu">
-            <li *ngFor="let curso of cursosjs">
-              <a class="dropdown-item" href="{{curso.href}}"> 
-                {{curso.nombre}}
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">  Proyectos  </a>
-          <ul class="dropdown-menu">
-            <li *ngFor="let curso of proyectos_realizados_luis">
-              <a class="dropdown-item" href="{{curso.href}}"> 
-                {{curso.nombre}}
-              </a>
-            </li>
-          </ul>
+<header class="container-fluid" style="font-style: italic;">
+  <!-- nav siga a la pantalla fixed-top  -->
+  <nav 
+    class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#/">
+        <img src="./assets/images/principal.jpg" width="50" height="50" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Cursos
+            </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">            
+            <a 
+            *ngFor="let casa of cursosjs"
+              target="{{casa.target}}" 
+              class="dropdown-item" 
+              href="{{casa.href}}">
+              {{casa.nombre}}
+            </a>
+          </div>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">  Agencia  </a>
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item" href="/agencia_empresas">Empresas</a>
-              <a class="dropdown-item" href="/agencia_profesionales">Profesionales</a>
-              <a class="dropdown-item" href="/agencia_emprendedores">Emprendedores</a>
-            </li>
-          </ul>
+          <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Proyectos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">            
+            <a 
+            *ngFor="let casa of proyectos_realizados_luis"
+              target="_blank" 
+              class="dropdown-item" 
+              href="{{casa.href}}">
+              {{casa.nombre}}
+            </a>
+          </div>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">  Contactos  </a>
-          <ul class="dropdown-menu">
-            <li *ngFor="let curso of contactosjs">
-              <a class="dropdown-item" href="{{curso.href}}"> 
-                {{curso.nombre}} - {{curso.titulo}}
-              </a>
-            </li>
-          </ul>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Agencia
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">            
+            <a class="dropdown-item" href="agencia_empresas">Empresas</a>
+            <a class="dropdown-item" href="agencia_profesionales">Profesionales</a>
+            <a class="dropdown-item" href="agencia_emprendedores">Emprendedores</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Contactos
+          </a>
+          <div id="headerContactosId" class="dropdown-menu" aria-labelledby="navbarDpdContactos">
+            <a  *ngFor="let casa of contactosjs" class="dropdown-item" href="{{casa.href}}">{{casa.nombre}} - {{casa.titulo}}</a>
+          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contacto_empresa">Acerca de</a>
         </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right" *ngFor="let task of login | async">
-          <!-- <h3>name: {{ task.nombre }} </h3> -->
-          <li class="nav-item" *ngIf="task.nombre=='error'">
-            <a class="nav-link" [routerLink]="'/login'">Login</a>
-          </li>
-          <li class="nav-item" *ngIf="task.nombre=='error'">
-            <a class="nav-link" [routerLink]="'/registro'">Registrar</a>
-          </li>
-      </ul>
+
+        </ul>
+        <form class="d-flex fst-italic">
+          <input 
+            id="iBuscar"
+            name="nBuscar"
+            class="form-control me-2 fst-italic" 
+            type="search" 
+            placeholder="Buscar" 
+            aria-label="Search">
+          <button 
+            class="btn btn-outline-secondary fst-italic" 
+            type="submit">
+              Buscar
+          </button>
+        </form>
+      </div>
     </div>
   </nav>
+
 </header>

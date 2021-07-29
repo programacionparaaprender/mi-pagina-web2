@@ -2,6 +2,8 @@ npm ls | select-string typescript
 
 ### ejemplo de geocerca
 
+ng new mi-pagina-web2
+
 #### pendiente
 https://angular-maps.com/guides/getting-started/
 https://angular-maps.com/api-docs/agm-core/directives/agmpolygon
@@ -15,8 +17,30 @@ probar para el evento clic
 https://github.com/SebastianM/angular-google-maps/issues/1845
 npm install @agm/core@1.1.0 --save
 
-
 ng generate component geocerca-google
+
+npm i @angular/material@9.2.1
+npm install @angular/cdk
+
+npm install rxjs
+npm install ngrx-store-persist
+
+npm install @angular/http
+npm install @types/axios
+npm install angular-cli-ghpages
+npm install axios
+
+npm install @ngrx/store@9.1.0
+npm install @ngrx/store-devtools@9.1.0
+
+npm install jquery
+error https://stackoverflow.com/questions/50943024/bootstrap-not-working-with-my-angular-project
+se corrije en angular.json
+en "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
+
 
 ### ejemplo de geocerca teoria
 https://developers.google.com/location-context/geofencing/
