@@ -120,8 +120,19 @@ npm run github
 
 hacer todo desde git batch
 
-
-
+https://stackoverflow.com/questions/66127492/error-in-exceeded-maximum-budget-for-e-project
+error angular.json modificar
+"budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "6mb",
+                  "maximumError": "7mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6mb",
+                  "maximumError": "7mb"
+                }
 
 
 ng deploy --repo=https://github.com/programacionparaaprender/mi-pagina-web2.git
