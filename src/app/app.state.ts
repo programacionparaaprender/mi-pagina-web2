@@ -331,8 +331,8 @@ export const contactosjs = [
     id:7,
     href:"contacto_jermany",
     img:"./assets/images/Jermany Avile.PNG",
-    alt:"Jermany",
-    nombre:"Jermany Avile",
+    alt:"Jermani",
+    nombre:"Jermani Avile",
     titulo:"Administración",
     descripcion:"Administración",
     url:"#"
