@@ -67,6 +67,8 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
 
 import { ProyectosComponent } from './proyectos/proyectos.component';
 
+import { MaestriaSanMarcosComponent } from './maestria-sanmarcos/maestria-sanmarcos.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -91,7 +93,8 @@ import { ProyectosComponent } from './proyectos/proyectos.component';
     ServiciosContactoComponent,
     CarruselComponent,
     NosotrosComponent,
-    ProyectosComponent
+    ProyectosComponent,
+    MaestriaSanMarcosComponent
   ],
   imports: [
     

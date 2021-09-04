@@ -37,6 +37,8 @@ import { ContactoJermanyComponent } from './contacto-jermany/contacto-jermany.co
 
 import { MainComponent } from './main/main.component';
 
+import { MaestriaSanMarcosComponent } from './maestria-sanmarcos/maestria-sanmarcos.component';
+
 import { Tio } from './models/tio'
 
 var usuario: Tio = {
@@ -49,6 +51,7 @@ var usuario: Tio = {
 
 const routes: Routes = [
   { path: '' , component: MainComponent},
+  { path: 'maestria-sanmarcos' , component: MaestriaSanMarcosComponent},
   {path: 'agencia_empresas' , component: AgenciaEmpresasComponent},
   {path: 'agencia_profesionales' , component: AgenciaProfesionalesComponent},
   {path: 'agencia_emprendedores' , component: AgenciaEmprendedoresComponent},

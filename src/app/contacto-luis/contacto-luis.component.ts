@@ -28,12 +28,14 @@ export class ContactoLuisComponent implements OnInit {
     experiencia_luis = experiencia_luis;
     proyectos_realizados_luis = proyectos_realizados_luis;
     proyectos = proyectos;
-    tecnologia:[];
+    tecnologia:[{porcentaje:100}];
     constructor(private router: Router) { 
     
 
     }
-  
+    obtenerDetalleTrabajoGrado(id:any):void{
+
+    }
     ngOnInit(): void {
     }
 
