@@ -4,6 +4,21 @@ npm ls | select-string typescript
 
 ng new mi-pagina-web2
 
+
+### actualizar versión de angular sin errores
+npm uninstall -g @angular/cli 
+npm cache clean
+npm install -g @angular/cli@latest
+
+
+### realizar publicación en apache tomcat
+1 con powershell node .\node_modules\@angular\cli\bin\ng build --base-href="/mi-pagina-web2/" --output-path="tomcat_publish/salida" 
+2 abrir la carpeta salida ruta frontend/tomcat_publish/
+3 copiar la carpeta WEB-INF dentro de salida ruta frontend/tomcat_publish/salida/
+4 dentro de frontend/tomcat_publish/salida gitbash(unix, linux) si usas java 7 'C:\Program Files\Java\jdk1.7.0_80\bin\jar.exe' cvf mi-pagina-web2.war *
+5 copiar mi-pagina-web2.war y pegar en otra ruta para que no se borre, se encuentra en frontend/tomcat_publish/salida/
+
+
 #### pendiente
 https://angular-maps.com/guides/getting-started/
 https://angular-maps.com/api-docs/agm-core/directives/agmpolygon
@@ -78,8 +93,7 @@ https://www.youtube.com/watch?v=uLZ-_4_qlPg
 ng generate component products-component
 
 
-Api Rest Angular 8
-----------
+### Api Rest Angular 8
 npm install --save angular-in-memory-web-api
 $ ng generate service data
 $ ng generate service product 
@@ -159,22 +173,23 @@ corrección error ERROR in Exceeded maximum budget for app.component.css. Budget
 
 https://stackoverflow.com/questions/53995948/warning-in-budgets-maximum-exceeded-for-initial
 
------------------------
-Estados persistentes
------------------------
+
+### Estados persistentes
 https://www.npmjs.com/package/ngrx-store-persist
 
 
-------------------------
-Peticiones más sencillas
--------------------------
+
+### Peticiones más sencillas
 https://www.npmjs.com/package/axios
 npm install @types/axios
 npm install --save axios
 
-----------------------
-Pediente el login
-------------------------
+
+
+
+
+
+### Pediente el login
 https://ngrx.io/guide/store/selectors
 https://angular-2-training-book.rangle.io/state-management/ngrx/reading_your_application_state_using_selectors
 
