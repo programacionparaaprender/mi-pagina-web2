@@ -111,6 +111,9 @@ npm i angular-cli-ghpages --save-dev
 
 ng build --prod --base-href "https://programacionparaaprender.github.io/mi-pagina-web2/"
 
+ng deploy --base-href=https://programacionparaaprender.github.io/mi-pagina-web2/
+
+
 npx angular-cli-ghpages —dir=dist/mi-pagina-web2
 
 ng build --base-href=/mi-pagina-web2/

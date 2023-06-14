@@ -69,8 +69,15 @@ import { ProyectosComponent } from './proyectos/proyectos.component';
 
 import { MaestriaSanMarcosComponent } from './maestria-sanmarcos/maestria-sanmarcos.component';
 
+import { ContadorAutomaticoComponent } from './contador-automatico/contador-automatico.component';
+import { QuarkusComponent } from './quarkus/quarkus.component';
+import { LegsComponent } from './applications/views/legs/legs.component';
+
 @NgModule({
   declarations: [
+    ContadorAutomaticoComponent,
+    QuarkusComponent,
+    LegsComponent,
     AppComponent,
     ViejaComponent,
     GeocercaGoogleComponent,

@@ -277,7 +277,7 @@ export const contactosjs = [
       descripcion:"Desarrollador Semisenior .Net Full Stack",
       url:"https://www.linkedin.com/in/luis-correa-36477a1b7/"
   },
-/*   {
+  {
       id:2,
       href:"contacto_percy",
       img:"./assets/images/Percy_Correa.webp",
@@ -336,7 +336,7 @@ export const contactosjs = [
     titulo:"Administración",
     descripcion:"Administración",
     url:"#"
-}, */
+}
 ];
 
 export const emprender_internetjs = [
