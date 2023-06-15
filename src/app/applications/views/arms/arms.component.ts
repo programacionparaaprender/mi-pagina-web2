@@ -10,7 +10,7 @@ export class ArmsComponent {
   title = '';
   descripcion = '';
   constructor(){
-    this.title = 'Piernas perfectas';
-    this.descripcion = 'Los ejercicios de pierna y cardio son muy importantes, nos permiten mejorar en los demás ejercicios';
+    this.title = 'Brazos perfectos';
+    this.descripcion = 'Los ejercicios para los brazos son muy importantes.';
   }
 }
