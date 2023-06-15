@@ -43,7 +43,7 @@ import { MaestriaSanMarcosComponent } from './maestria-sanmarcos/maestria-sanmar
 import { ContadorAutomaticoComponent } from './contador-automatico/contador-automatico.component';
 import { QuarkusComponent } from './quarkus/quarkus.component';
 import { LegsComponent } from './applications/views/legs/legs.component';
-
+import { ArmsComponent } from './applications/views/arms/arms.component';
 import { Tio } from './models/tio'
 
 var usuario: Tio = {
@@ -61,7 +61,7 @@ const routes: Routes = [
   {path: 'contador' , component: ContadorAutomaticoComponent},
   {path: 'quarkus' , component: QuarkusComponent},
   {path: 'legs' , component: LegsComponent},
-
+  {path: 'arms' , component: ArmsComponent},
   {path: 'agencia_empresas' , component: AgenciaEmpresasComponent},
   {path: 'agencia_profesionales' , component: AgenciaProfesionalesComponent},
   {path: 'agencia_emprendedores' , component: AgenciaEmprendedoresComponent},

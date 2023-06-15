@@ -33,7 +33,6 @@ describe('LogintobepageComponent', () => {
 		expect(submitEl.nativeElement.innerHTML).toBe('Ingresa por servicio');
 	});
 
-	
 it('Probar cajasLlenas', () => {
 	const comp = TestBed.createComponent(LogintobepageComponent);
 	comp.componentInstance.codigo1 = "1"; 
@@ -47,4 +46,5 @@ it('Probar cajasLlenas', () => {
 	//expect(comp.componentInstance.cambiarIcono).toEqual(1);
 });
 */
+	
 });
