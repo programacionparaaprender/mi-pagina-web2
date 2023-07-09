@@ -44,6 +44,7 @@ import { ContadorAutomaticoComponent } from './contador-automatico/contador-auto
 import { QuarkusComponent } from './quarkus/quarkus.component';
 import { LegsComponent } from './applications/views/legs/legs.component';
 import { ArmsComponent } from './applications/views/arms/arms.component';
+import { MasterAspNetComponent } from './master-aspnet/master-aspnet.component';
 import { Tio } from './models/tio'
 
 var usuario: Tio = {
@@ -56,6 +57,7 @@ var usuario: Tio = {
 
 const routes: Routes = [
   { path: '' , component: MainComponent},
+  { path: 'masteraspnet' , component: MasterAspNetComponent},
   { path: 'maestria-sanmarcos' , component: MaestriaSanMarcosComponent},
 
   {path: 'contador' , component: ContadorAutomaticoComponent},

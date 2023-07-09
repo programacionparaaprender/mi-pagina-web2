@@ -71,9 +71,12 @@ import { MaestriaSanMarcosComponent } from './maestria-sanmarcos/maestria-sanmar
 
 import { ContadorAutomaticoComponent } from './contador-automatico/contador-automatico.component';
 import { QuarkusComponent } from './quarkus/quarkus.component';
-
+import { MenuNuevoComponent } from './menu-nuevo/menu-nuevo.component';
+import { MasterAspNetComponent } from './master-aspnet/master-aspnet.component';
 @NgModule({
   declarations: [
+    MenuNuevoComponent,
+    MasterAspNetComponent,
     ContadorAutomaticoComponent,
     QuarkusComponent,
     AppComponent,
