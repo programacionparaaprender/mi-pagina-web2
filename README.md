@@ -49,6 +49,7 @@
 >- npm install --save angular-bootstrap-md@15.0.0 --force
 >- npm install @angular/cdk@15 --force
 >- ng update @angular/cli@15 @angular/core@15
+>- ng update @angular/cli@16 @angular/core@16
 
 ####
 <!-- Google tag (gtag.js) -->
