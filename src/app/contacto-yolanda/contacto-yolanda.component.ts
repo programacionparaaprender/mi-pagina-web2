@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 //import { LatLng, LatLngLiteral, PolyMouseEvent } from '../services/google-maps-types';
-import { AgmCoreModule, LatLng, LatLngLiteral, PolyMouseEvent } from '@agm/core';
+ 
 
 import { Router } from '@angular/router';
 

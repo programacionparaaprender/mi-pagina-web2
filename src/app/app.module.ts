@@ -20,9 +20,7 @@ localStorage.setItem('URL', 'https://localhost:44382/');
 
   
   import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { GeocercaGoogleComponent } from './geocerca-google/geocerca-google.component';
 
-import { AgmCoreModule } from '@agm/core';
 
 
 import { MenuComponent } from './menu/menu.component';
@@ -73,16 +71,18 @@ import { ContadorAutomaticoComponent } from './contador-automatico/contador-auto
 import { QuarkusComponent } from './quarkus/quarkus.component';
 import { MenuNuevoComponent } from './menu-nuevo/menu-nuevo.component';
 import { MasterAspNetComponent } from './master-aspnet/master-aspnet.component';
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
+    MainComponent,
     MenuNuevoComponent,
     MasterAspNetComponent,
     ContadorAutomaticoComponent,
     QuarkusComponent,
     AppComponent,
     ViejaComponent,
-    GeocercaGoogleComponent,
     MenuComponent,
+    MenuNuevoComponent,
     EmprenderInternetComponent,
     AgenciaEmpresasComponent,
     AgenciaProfesionalesComponent,
@@ -106,13 +106,10 @@ import { MasterAspNetComponent } from './master-aspnet/master-aspnet.component';
   ],
   imports: [
     
-  
+    RouterModule,
     FormsModule,
     ReactiveFormsModule,
     BrowserModule,
-    AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyDZktO_JnnvrY4BnD2IyZo8PqNXiDTWP1w'
-    }),
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,

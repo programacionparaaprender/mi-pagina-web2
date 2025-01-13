@@ -2,8 +2,6 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ViejaComponent } from './juegos/vieja/vieja.component';
 
-import { GeocercaGoogleComponent } from './geocerca-google/geocerca-google.component';
-
 
 
 
@@ -84,9 +82,6 @@ const routes: Routes = [
     path: 'vieja' , component: ViejaComponent
   },
 
-  {
-    path: 'geocerca' , component: GeocercaGoogleComponent
-  },
 
 ];
 
