@@ -1,3 +1,53 @@
+
+
+### 14.
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HQ498XSG4F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HQ498XSG4F');
+</script>
+
+>- https://www.npmjs.com/package/angular-cli-ghpages
+>- ng add angular-cli-ghpages@next
+>- si no funciona
+>- ng add angular-cli-ghpages
+>- npm install angular-cli-ghpages@1.0.0-rc.1
+>- ng add @angular/fire
+>- ng add @azure/ng-deploy
+>- ng add @zeit/ng-deploy
+>- ahora ya finalizado cmd git
+>- npm run github
+>- hacer todo desde git batch
+>- https://stackoverflow.com/questions/66127492/error-in-exceeded-maximum-budget-for-e-project
+>- error angular.json modificar
+"budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "6mb",
+                  "maximumError": "7mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6mb",
+                  "maximumError": "7mb"
+                }
+>- ng deploy --repo=https://github.com/programacionparaaprender/mi-pagina-web2.git
+>- este siempre ejecutarlo para generar ->
+>- ng deploy --base-href=https://programacionparaaprender.github.io/mi-pagina-web2/
+>- ejecutar siempre desde git cmd npm run github
+>- luego ya tienes el dist listo
+>- crear el gh-pages
+>- pero los cambios los subes a la rama master
+>- no colocar un readme.md
+>- corrección error ERROR in Exceeded maximum budget for app.component.css. Budget 10 kB was not met by 132 kB with a total of 142 kB.
+
+
+
+
 npm ls | select-string typescript
 
 ### ejemplo de geocerca
@@ -17,6 +67,10 @@ npm install -g @angular/cli@latest
 3 copiar la carpeta WEB-INF dentro de salida ruta frontend/tomcat_publish/salida/
 4 dentro de frontend/tomcat_publish/salida gitbash(unix, linux) si usas java 7 'C:\Program Files\Java\jdk1.7.0_80\bin\jar.exe' cvf mi-pagina-web2.war *
 5 copiar mi-pagina-web2.war y pegar en otra ruta para que no se borre, se encuentra en frontend/tomcat_publish/salida/
+
+###
+>- 
+
 
 
 #### pendiente
