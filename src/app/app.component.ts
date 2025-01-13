@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {FormControl, Validators} from '@angular/forms';
+import {UntypedFormControl, Validators} from '@angular/forms';
 
 export interface Brand {
   value: number;
@@ -13,8 +13,8 @@ export interface Brand {
 })
 export class AppComponent {
   title = 'angularrouter';
-  brandControl = new FormControl('', [Validators.required]);
-  selectFormControl = new FormControl('', Validators.required);
+  brandControl = new UntypedFormControl('', [Validators.required]);
+  selectFormControl = new UntypedFormControl('', Validators.required);
   brands: Brand[] = [
     { value: 1, viewValue: 'Louis Vuitton' },
     { value: 2, viewValue: 'Gucci' },
