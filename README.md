@@ -40,7 +40,7 @@
 ### 14. Cuenta de Google Analytics
 
 #### actualizar angular
->- npm install --save angular-bootstrap-md@13.0.0 --force
+>- ng update @angular/cli@10 @angular/core@10
 >- ng update @angular/cli@13 @angular/core@13
 >- npm show angular-bootstrap-md versions
 >- npm install --save angular-bootstrap-md@14.0.0 --force
