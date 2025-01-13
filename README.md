@@ -225,6 +225,9 @@ ng build --prod --base-href "https://programacionparaaprender.github.io/mi-pagin
 
 ng deploy --base-href=https://programacionparaaprender.github.io/mi-pagina-web2/
 
+#### este es el que funciona
+>- ng build --configuration production --base-href=https://programacionparaaprender.github.io/mi-pagina-web2/
+
 
 npx angular-cli-ghpages —dir=dist/mi-pagina-web2
 
