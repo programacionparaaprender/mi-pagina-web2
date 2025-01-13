@@ -1,6 +1,55 @@
 
+## curso 
+>- https://www.udemy.com/course/intro-administrador-etiquetas-tag-manager-y-analisis-web/learn/lecture/9255318?components=add_to_cart%2Cbase_purchase_section%2Cbuy_button%2Ccacheable_buy_button%2Cdeal_badge%2Cdiscount_expiration%2Cgift_this_course%2Clifetime_access_context%2Cprice_text%2Cpurchase%2Cpurchase_tabs_context%2Crecommendation%2Credeem_coupon%2Cone_click_checkout#overview
 
-### 14.
+## Sección 1: Plan de Estudio y Estructura del aula
+
+### 1. [IMPORTANTE] Leer antes de comenzar!
+
+### 2. Objetivos de este curso
+
+### 3. Programa del módulo Fundamentos de analítica digital y GTM
+
+### 4. Profesor & Tutor
+
+### 5. Soporte: Qué hacer en caso de problemas
+
+### 6. Participa al debate
+
+## Sección 2: Entender la analítica digital
+
+### 7. ¿Qué es la analítica digital?
+
+
+### 8. La estrategia de medición
+
+### 9. Tipo de objetivos y conversiones
+
+## Sección 3: Plan de implementación con Google Tag Manager
+
+### 10. Plan de implementación
+
+### 11. Qué es un administrador de etiquetas y Tag Manager
+
+### 12. ¿Qué es una etiqueta?
+
+### 13. Cómo funciona Google Tag Manager
+
+## Sección 4: Google Analytics y GA4 dentro del plan de implementación técnica
+
+### 14. Cuenta de Google Analytics
+
+#### actualizar angular
+>- npm install --save angular-bootstrap-md@13.0.0 --force
+>- ng update @angular/cli@13 @angular/core@13
+>- npm show angular-bootstrap-md versions
+>- npm install --save angular-bootstrap-md@14.0.0 --force
+>- ng update @angular/cli@14 @angular/core@14
+>- npm install --save angular-bootstrap-md@15.0.0 --force
+>- npm install @angular/cdk@15 --force
+>- ng update @angular/cli@15 @angular/core@15
+
+####
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HQ498XSG4F"></script>
 <script>
@@ -10,6 +59,13 @@
 
   gtag('config', 'G-HQ498XSG4F');
 </script>
+
+pegarlo en cada página en la sección head
+
+### 15. 
+
+
+
 
 >- https://www.npmjs.com/package/angular-cli-ghpages
 >- ng add angular-cli-ghpages@next
