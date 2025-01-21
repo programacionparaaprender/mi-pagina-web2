@@ -227,11 +227,16 @@ ng deploy --base-href=https://programacionparaaprender.github.io/mi-pagina-web2/
 
 #### este es el que funciona
 >- ng build --configuration production --base-href=https://programacionparaaprender.github.io/mi-pagina-web2/
+>- echo > dist/mi-pagina-web2/.nojekyll
+>- npx gh-pages -d dist/mi-pagina-web2
+
+
+#### pendiente
+>- ng build --configuration production --base-href=https://programacionparaaprender.github.io/mi-pagina-web2/
 >- ng deploy --base-href=https://programacionparaaprender.github.io/mi-pagina-web2/
 >- echo > dist/mi-pagina-web2/.nojekyll
 >- npm install gh-pages --save-dev --legacy-peer-deps
 >- npx gh-pages -d dist/mi-pagina-web2
-
 
 npx angular-cli-ghpages —dir=dist/mi-pagina-web2
 
