@@ -75,7 +75,7 @@ const routes: Routes = [
   {path: 'contacto_patricia' , component: ContactoPatriciaComponent},
   {path: 'contacto_ana' , component: ContactoAnaComponent},
   {path: 'contacto_jermany' , component: ContactoJermanyComponent},
-  {path: 'contacto_empresa' , component: ContactoEmpresaComponent},
+  {path: 'contacto' , component: ContactoEmpresaComponent},
 
   
   {

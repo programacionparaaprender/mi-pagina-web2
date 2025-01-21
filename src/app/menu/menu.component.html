@@ -90,7 +90,7 @@
             *ngFor="let casa of cursosjs"
               target="{{casa.target}}" 
               class="dropdown-item" 
-              href="{{casa.href}}">
+              routerLink="{{casa.href}}">
               {{casa.nombre}}
             </a>
           </div>
@@ -104,19 +104,19 @@
             *ngFor="let casa of proyectos_realizados_luis"
               target="_blank" 
               class="dropdown-item" 
-              href="{{casa.href}}">
+              routerLink="{{casa.href}}">
               {{casa.nombre}}
             </a>
           </div>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" routerLink="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Agencia
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">            
-            <a class="dropdown-item" href="agencia_empresas">Empresas</a>
-            <a class="dropdown-item" href="agencia_profesionales">Profesionales</a>
-            <a class="dropdown-item" href="agencia_emprendedores">Emprendedores</a>
+            <a class="dropdown-item" routerLink="agencia_empresas">Empresas</a>
+            <a class="dropdown-item" routerLink="agencia_profesionales">Profesionales</a>
+            <a class="dropdown-item" routerLink="agencia_emprendedores">Emprendedores</a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -124,11 +124,11 @@
             Contactos
           </a>
           <div id="headerContactosId" class="dropdown-menu" aria-labelledby="navbarDpdContactos">
-            <a  *ngFor="let casa of contactosjs" class="dropdown-item" href="{{casa.href}}">{{casa.nombre}} - {{casa.titulo}}</a>
+            <a  *ngFor="let casa of contactosjs" class="dropdown-item" routerLink="{{casa.href}}">{{casa.nombre}} - {{casa.titulo}}</a>
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contacto_empresa">Acerca de</a>
+          <a class="nav-link" href="contacto">Acerca de</a>
         </li>
 
         </ul>
