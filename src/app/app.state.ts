@@ -274,10 +274,10 @@ export const contactosjs = [
       alt:"Luis",
       nombre:"Luis Correa",
       titulo:"Ingeniero en Computación",
-      descripcion:"Desarrollador Semisenior .Net Full Stack",
-      url:"https://www.linkedin.com/in/luis-correa-36477a1b7/"
+      descripcion:"Desarrollador Semisenior Web Full Stack",
+      url:"https://www.linkedin.com/in/luis13711/"
   },
-/*   {
+   {
       id:2,
       href:"contacto_percy",
       img:"./assets/images/Percy_Correa.webp",
@@ -336,7 +336,7 @@ export const contactosjs = [
     titulo:"Administración",
     descripcion:"Administración",
     url:"#"
-} */
+} 
 ];
 
 export const emprender_internetjs = [
