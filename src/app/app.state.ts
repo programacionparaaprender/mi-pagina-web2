@@ -330,7 +330,7 @@ export const contactosjs = [
   {
     id:7,
     href:"contacto_jermany",
-    img:"./assets/images/Jermany Avile.png",
+    img:"./assets/images/Jermany Avile.PNG",
     alt:"Jermani",
     nombre:"Jermani Avile",
     titulo:"Administración",
@@ -345,6 +345,16 @@ export const contactosjs = [
   nombre:"Anmary Rondon",
   titulo:"Ingeniería Mecanica",
   descripcion:"Ingeniería Mecanica",
+  url:"#"
+}  ,
+{
+  id:9,
+  href:"contacto_adrian",
+  img:"./assets/images/adrian.png",
+  alt:"Adrian",
+  nombre:"Adrian Yancel",
+  titulo:"Jefe de Panaderia",
+  descripcion:"Jefe de Panaderia",
   url:"#"
 } 
 ];

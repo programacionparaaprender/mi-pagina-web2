@@ -44,6 +44,7 @@ import { LegsComponent } from './applications/views/legs/legs.component';
 import { ArmsComponent } from './applications/views/arms/arms.component';
 import { MasterAspNetComponent } from './master-aspnet/master-aspnet.component';
 import { Tio } from './models/tio'
+import { ContactoAnmaryComponent } from './contacto-anmary/contacto-anmary.component';
 
 var usuario: Tio = {
   id: 1,
@@ -75,6 +76,7 @@ const routes: Routes = [
   {path: 'contacto_patricia' , component: ContactoPatriciaComponent},
   {path: 'contacto_ana' , component: ContactoAnaComponent},
   {path: 'contacto_jermany' , component: ContactoJermanyComponent},
+  {path: 'contacto_anmary' , component: ContactoAnmaryComponent},
   {path: 'contacto' , component: ContactoEmpresaComponent},
 
   

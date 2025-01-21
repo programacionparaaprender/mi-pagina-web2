@@ -72,8 +72,10 @@ import { QuarkusComponent } from './quarkus/quarkus.component';
 import { MenuNuevoComponent } from './menu-nuevo/menu-nuevo.component';
 import { MasterAspNetComponent } from './master-aspnet/master-aspnet.component';
 import { RouterModule } from '@angular/router';
+import { ContactoAnmaryComponent } from './contacto-anmary/contacto-anmary.component';
 @NgModule({
   declarations: [
+    ContactoAnmaryComponent,
     MainComponent,
     MenuNuevoComponent,
     MasterAspNetComponent,
