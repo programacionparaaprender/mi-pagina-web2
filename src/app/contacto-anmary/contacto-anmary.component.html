@@ -25,7 +25,6 @@ PROYECTOS
   <ul>
       <li>Levantamientos</li>
       <li>Documentos</li>
-      <li>Diseño de diagramas UML</li>
   </ul>
 </h3>
 <h2>
@@ -44,44 +43,6 @@ ASESORÍA (A nivel nacional)
 <div class="container-fluid" style="max-width:1564px">
 <div class="card" style="width: 100%;">
 <div class="card-body">
-  <button 
-    class="btn btn-secondary" 
-    type="button" 
-    data-bs-toggle="collapse" 
-    data-bs-target="#collapTapGrado" 
-    aria-expanded="false" 
-    aria-controls="collapTapGrado">
-    Trabajo de grado
-  </button>
-  <br>
-  <br>
-  <div class="collapse show" id="collapTapGrado">
-    <div class="row">
-      <div 
-        *ngFor="let casa of trabajo_grado_luis"
-        class="col-sm-6 col-md-3">
-        <!--  <h4>{{ casa.nombre }}</h4> -->
-         <a 
-          title="{{casa.nombre}}"
-          target="_blank" 
-          class="dropdown-item" 
-          href="{{ casa.href }}">
-            <img  src="{{casa.src}}" style="width:100%" title="{{ casa.nombre }}">
-            <p style="overflow: hidden;">{{ casa.nombre }}</p>
-        </a>
-        <button 
-          (click)="obtenerDetalleTrabajoGrado(casa.id)"
-          type="button" 
-          class="btn btn-info" 
-          data-bs-toggle="modal" 
-          data-bs-target="#exampleModal">
-          Detalle
-        </button>
-      </div>
-    </div>
-  </div>
-  <br>
-  <hr>
 
   <button 
     class="btn btn-secondary" 
@@ -96,117 +57,12 @@ ASESORÍA (A nivel nacional)
   <br>
   <br>
   <div class="collapse" id="collapTapExperiencia">
-    <div class="row">
-      <div 
-       
-        *ngFor="let casa of experiencia_luis"
-        class="col-sm-6 col-md-3">
-        <!--  <h4>{{ casa.nombre }}</h4> -->
-         <a 
-          title="{{casa.nombre}}"
-          target="_blank" 
-          class="dropdown-item" 
-          href="{{ casa.href }}">
-            <img  src="{{casa.src}}" style="width:100%" title="{{ casa.nombre }}">
-            <p style="overflow: hidden;">{{ casa.nombre }}</p>
-        </a>
-        <button 
-          ng-click="obtenerDetalleExperiencia(casa.id)"
-          type="button" 
-          class="btn btn-info"
-          data-bs-toggle="modal" 
-          data-bs-target="#exampleModal">
-          Detalle
-        </button>
-      </div>
-    </div>
-  </div>
-  <br>
-  <hr>
-  <button 
-    class="btn btn-secondary" 
-    type="button" 
-    data-bs-toggle="collapse" 
-    data-bs-target="#collapTapProyectos" 
-    aria-expanded="false" 
-    aria-controls="collapTapProyectos">
-    Proyectos realizados
-  </button>
-  <br>
-  <br>
-  <div class="collapse" id="collapTapProyectos">
-    <div class="row">
-      <div 
-      *ngFor="let casa of proyectos_realizados_luis"
-        class="col-sm-6 col-md-3">
-        <!--  <h4>{{ casa.nombre }}</h4> -->
-         <a target="_blank" class="dropdown-item" href="{{ casa.href }}">
-            <img  src="{{casa.src}}" style="width:100%" title="{{ casa.nombre }}">
-            <p style="overflow: hidden;">{{ casa.nombre }}</p>
-        </a>
-        <button 
-          ng-click="obtenerDetalle(casa.id)"
-          type="button" 
-          class="btn btn-info"
-          data-bs-toggle="modal" 
-          data-bs-target="#exampleModal">
-          Detalle
-        </button>
-      </div>
-           
-  </div>
-  <br>
-  <hr>
-  
-  </div>
-  <br>
-  <hr>
-  <button 
-    class="btn btn-secondary" 
-    type="button" 
-    data-bs-toggle="collapse" 
-    data-bs-target="#collapTapSoporteTecnico" 
-    aria-expanded="false" 
-    aria-controls="collapTapSoporteTecnico">
-    Soporte tecnico
-  </button>
-  <br>
-  <br>
-  <div class="collapse" id="collapTapSoporteTecnico">
-    <div class="row">
-      <div class="col-sm-6 col-md-3">
-        
-        <img src="w3images/house5.jpg" style="width:100%">
-        <div>Summer House</div>
-      </div>
-    </div>
+
   </div>
   <br>
   <hr>
 
-  <button 
-    class="btn btn-secondary" 
-    type="button" 
-    data-bs-toggle="collapse" 
-    data-bs-target="#collapTapServicioComunitario" 
-    aria-expanded="false" 
-    aria-controls="collapTapServicioComunitario">
-    Servicio comunitario
-  </button>
-  <br>
-  <br>
-  <div class="collapse" id="collapTapServicioComunitario">
-    <div class="row">
-      <div 
-        *ngFor="let casa of proyectos"
-          class="col-sm-6 col-md-3">
-          <!--  <h4>{{ casa.nombre }}</h4> -->
-           <a target="_blank" class="dropdown-item" href="{{ casa.url }}">
-              <img  src="{{casa.imagen}}" style="width:100%">
-          </a>
-      </div>
-    </div>
-  </div>
+
 </div>  
 <br>
 <hr> 
