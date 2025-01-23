@@ -216,14 +216,6 @@ ng generate class product
 $ ng generate component product-list
 $ ng generate component product-detail
 
-### publicar en github
-https://medium.com/tech-insights/how-to-deploy-angular-apps-to-github-pages-gh-pages-896c4e10f9b4
-
-npm i angular-cli-ghpages --save-dev
-
-ng build --prod --base-href "https://programacionparaaprender.github.io/mi-pagina-web2/"
-
-ng deploy --base-href=https://programacionparaaprender.github.io/mi-pagina-web2/
 
 #### este es el que funciona
 >- ng build --configuration production --base-href=https://programacionparaaprender.github.io/mi-pagina-web2/
@@ -243,62 +235,6 @@ npx angular-cli-ghpages —dir=dist/mi-pagina-web2
 ng build --base-href=/mi-pagina-web2/
 
 ng build --base-href=/
-
-### pasos para publicar con angular-cli-ghpages
-https://www.npmjs.com/package/angular-cli-ghpages
-ng add angular-cli-ghpages@next
-si no funciona
-ng add angular-cli-ghpages
-npm install angular-cli-ghpages@1.0.0-rc.1
-
-
-ng add @angular/fire
-  ng add @azure/ng-deploy
-  ng add @zeit/ng-deploy
-
-ahora ya finalizado cmd git
-npm run github
-
-hacer todo desde git batch
-
-https://stackoverflow.com/questions/66127492/error-in-exceeded-maximum-budget-for-e-project
-error angular.json modificar
-"budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "6mb",
-                  "maximumError": "7mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "6mb",
-                  "maximumError": "7mb"
-                }
-
-
-ng deploy --repo=https://github.com/programacionparaaprender/mi-pagina-web2.git
-
-este siempre ejecutarlo para generar ->
-
-ng deploy --base-href=https://programacionparaaprender.github.io/mi-pagina-web2/
-
-ejecutar siempre desde git cmd npm run github
-
-luego ya tienes el dist listo
-
-
-crear el gh-pages
-
-
-pero los cambios los subes a la rama master
-
-
-no colocar un readme.md
-
-corrección error ERROR in Exceeded maximum budget for app.component.css. Budget 10 kB was not met by 132 kB with a total of 142 kB.
-
-
-https://stackoverflow.com/questions/53995948/warning-in-budgets-maximum-exceeded-for-initial
 
 
 ### Estados persistentes
