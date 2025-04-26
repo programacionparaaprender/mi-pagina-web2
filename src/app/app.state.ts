@@ -277,7 +277,7 @@ export const contactosjs = [
       descripcion:"Desarrollador Semisenior Web Full Stack",
       url:"https://www.linkedin.com/in/luis13711/"
   },
-   {
+/*    {
       id:2,
       href:"contacto_percy",
       img:"./assets/images/Percy_Correa.webp",
@@ -356,7 +356,7 @@ export const contactosjs = [
   titulo:"Jefe de Panaderia",
   descripcion:"Jefe de Panaderia",
   url:"#"
-} 
+}  */
 ];
 
 export const emprender_internetjs = [
