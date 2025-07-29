@@ -65,21 +65,6 @@
 pegarlo en cada página en la sección head
 
 ### 15. 
-
-
-
-
->- https://www.npmjs.com/package/angular-cli-ghpages
->- ng add angular-cli-ghpages@next
->- si no funciona
->- ng add angular-cli-ghpages
->- npm install angular-cli-ghpages@1.0.0-rc.1
->- ng add @angular/fire
->- ng add @azure/ng-deploy
->- ng add @zeit/ng-deploy
->- ahora ya finalizado cmd git
->- npm run github
->- hacer todo desde git batch
 >- https://stackoverflow.com/questions/66127492/error-in-exceeded-maximum-budget-for-e-project
 >- error angular.json modificar
 "budgets": [
@@ -93,14 +78,7 @@ pegarlo en cada página en la sección head
                   "maximumWarning": "6mb",
                   "maximumError": "7mb"
                 }
->- ng deploy --repo=https://github.com/programacionparaaprender/mi-pagina-web2.git
->- este siempre ejecutarlo para generar ->
->- ng deploy --base-href=https://programacionparaaprender.github.io/mi-pagina-web2/
->- ejecutar siempre desde git cmd npm run github
->- luego ya tienes el dist listo
->- crear el gh-pages
->- pero los cambios los subes a la rama master
->- no colocar un readme.md
+
 >- corrección error ERROR in Exceeded maximum budget for app.component.css. Budget 10 kB was not met by 132 kB with a total of 142 kB.
 
 
