@@ -71,18 +71,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "mi-pagina-web2:build"
+            "buildTarget": "mi-pagina-web2:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "mi-pagina-web2:build:production"
+              "buildTarget": "mi-pagina-web2:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mi-pagina-web2:build"
+            "buildTarget": "mi-pagina-web2:build"
           }
         },
         "test": {
