@@ -15,9 +15,6 @@ import { ContactoJermanyComponent } from './contacto-jermany/contacto-jermany.co
 import { MainComponent } from './main/main.component';
 import { MaestriaSanMarcosComponent } from './maestria-sanmarcos/maestria-sanmarcos.component';
 import { ContadorAutomaticoComponent } from './contador-automatico/contador-automatico.component';
-import { QuarkusComponent } from './quarkus/quarkus.component';
-import { LegsComponent } from './applications/views/legs/legs.component';
-import { ArmsComponent } from './applications/views/arms/arms.component';
 import { ContactoAnmaryComponent } from './contacto-anmary/contacto-anmary.component';
 import { loadRemoteModule } from '@angular-architects/module-federation';
 
@@ -25,9 +22,6 @@ export const routes: Routes = [
   { path: '' , component: MainComponent},
   { path: 'maestria-sanmarcos' , component: MaestriaSanMarcosComponent},
   {path: 'contador' , component: ContadorAutomaticoComponent},
-  {path: 'quarkus' , component: QuarkusComponent},
-  {path: 'legs' , component: LegsComponent},
-  {path: 'arms' , component: ArmsComponent},
   {path: 'agencia_empresas' , component: AgenciaEmpresasComponent},
   {path: 'agencia_profesionales' , component: AgenciaProfesionalesComponent},
   {path: 'agencia_emprendedores' , component: AgenciaEmprendedoresComponent},
