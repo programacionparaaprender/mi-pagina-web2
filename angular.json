@@ -36,7 +36,7 @@
               				"node_modules/bootstrap/dist/js/bootstrap.js"
 						],
 						"main": "src/main.ts",
-						"outputPath": "dist/mf-host-auth0",
+						"outputPath": "dist/mi-pagina-web2",
 						"index": "src/index.html",
 						"extraWebpackConfig": "webpack.config.js",
 						"commonChunk": false
