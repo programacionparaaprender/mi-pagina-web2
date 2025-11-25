@@ -12,11 +12,14 @@ import { map } from 'rxjs/operators';
 
 
 import { ventas_madrejs, contactosjs } from './../app.state';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-contacto-patricia',
   templateUrl: './contacto-patricia.component.html',
+  standalone:true,
+  imports:[CommonModule],
   styleUrls: ['./contacto-patricia.component.css']
 })
 

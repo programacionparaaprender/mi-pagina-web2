@@ -1,9 +1,11 @@
 import { Component} from '@angular/core';
-import { Link } from 'src/app/commons/models/link';
+import { Link } from '../../../commons/models/link';
 
 
 @Component({
   selector: 'app-legs',
+  standalone:true,
+  imports:[],
   templateUrl: './legs.component.html',
   styleUrls: ['./legs.component.css']
 })

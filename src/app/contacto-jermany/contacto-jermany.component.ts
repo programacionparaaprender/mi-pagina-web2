@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { contactosjs } from './../app.state';
+import { contactosjs } from '../app.state';
 
 
 @Component({

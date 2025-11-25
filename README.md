@@ -1,243 +1,84 @@
+# Componente1
 
-## curso 
->- https://www.udemy.com/course/intro-administrador-etiquetas-tag-manager-y-analisis-web/learn/lecture/9255318?components=add_to_cart%2Cbase_purchase_section%2Cbuy_button%2Ccacheable_buy_button%2Cdeal_badge%2Cdiscount_expiration%2Cgift_this_course%2Clifetime_access_context%2Cprice_text%2Cpurchase%2Cpurchase_tabs_context%2Crecommendation%2Credeem_coupon%2Cone_click_checkout#overview
+### datos
+## cursos  de angular
 
-## Sección 1: Plan de Estudio y Estructura del aula
-
-### 1. [IMPORTANTE] Leer antes de comenzar!
-
-### 2. Objetivos de este curso
-
-### 3. Programa del módulo Fundamentos de analítica digital y GTM
-
-### 4. Profesor & Tutor
-
-### 5. Soporte: Qué hacer en caso de problemas
-
-### 6. Participa al debate
-
-## Sección 2: Entender la analítica digital
-
-### 7. ¿Qué es la analítica digital?
+### curso de compodoc
+>- https://www.udemy.com/course/compodoc-crea-documentacion-en-angular-ionic/learn/lecture/13589698?components=add_to_cart%2Cbase_purchase_section%2Cbuy_button%2Ccacheable_buy_button%2Cdeal_badge%2Cdiscount_expiration%2Cgift_this_course%2Clifetime_access_context%2Cprice_text%2Cpurchase%2Cpurchase_tabs_context%2Crecommendation%2Credeem_coupon%2Cone_click_checkout#overview
 
 
-### 8. La estrategia de medición
-
-### 9. Tipo de objetivos y conversiones
-
-## Sección 3: Plan de implementación con Google Tag Manager
-
-### 10. Plan de implementación
-
-### 11. Qué es un administrador de etiquetas y Tag Manager
-
-### 12. ¿Qué es una etiqueta?
-
-### 13. Cómo funciona Google Tag Manager
-
-## Sección 4: Google Analytics y GA4 dentro del plan de implementación técnica
-
-### 14. Cuenta de Google Analytics
-
-#### actualizar angular
->- ng update @angular/cli@10 @angular/core@10
->- ng update @angular/cli@13 @angular/core@13
->- ng update @angular/cli@14 @angular/core@14
->- npm show angular-bootstrap-md versions
->- npm install --save angular-bootstrap-md@14.0.0 --force
->- ng update @angular/cli@14 @angular/core@14
->- npm install --save angular-bootstrap-md@15.0.0 --force
->- npm install @angular/cdk@15 --force
->- ng update @angular/cli@15 @angular/core@15
->- ng update @angular/cli@16 @angular/core@16
-
-####
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HQ498XSG4F"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-HQ498XSG4F');
-</script>
-
-pegarlo en cada página en la sección head
-
-### 15. 
->- https://stackoverflow.com/questions/66127492/error-in-exceeded-maximum-budget-for-e-project
->- error angular.json modificar
-"budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "6mb",
-                  "maximumError": "7mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "6mb",
-                  "maximumError": "7mb"
-                }
-
->- corrección error ERROR in Exceeded maximum budget for app.component.css. Budget 10 kB was not met by 132 kB with a total of 142 kB.
-
-
-
-
-npm ls | select-string typescript
-
-### ejemplo de geocerca
-
-ng new mi-pagina-web2
-
-
-### actualizar versión de angular sin errores
-npm uninstall -g @angular/cli 
-npm cache clean
-npm install -g @angular/cli@latest
-
-
-### realizar publicación en apache tomcat
-1 con powershell node .\node_modules\@angular\cli\bin\ng build --base-href="/mi-pagina-web2/" --output-path="tomcat_publish/salida" 
-2 abrir la carpeta salida ruta frontend/tomcat_publish/
-3 copiar la carpeta WEB-INF dentro de salida ruta frontend/tomcat_publish/salida/
-4 dentro de frontend/tomcat_publish/salida gitbash(unix, linux) si usas java 7 'C:\Program Files\Java\jdk1.7.0_80\bin\jar.exe' cvf mi-pagina-web2.war *
-5 copiar mi-pagina-web2.war y pegar en otra ruta para que no se borre, se encuentra en frontend/tomcat_publish/salida/
+### documentar
+>- npm install -D @compodoc/compodoc
 
 ###
->- 
+>- ng new mf-host --no-standalone
+>- npm install -D @angular-architects/module-federation
+>- ng add @angular-architects/module-federation --project mf-remote --port 4200 --type host
+
+>- ng add @angular-architects/module-federation --project mf-shell --port 4200 --type host
+>- ng add @angular-architects/module-federation --project mf-shopping --port 4201 --type remote
+>- ng add @angular-architects/module-federation --project mf-payment --port 4202 --type remote
+
+>- ng new mf-shell --style=scss --routing=true
+>- ng new mf-payment --style=scss
+>- ng new mf-shopping --style=scss --routing=true
+>- ng g c components/login -m login.module
+>- --port 4200 --type host
+
+### comandos aws s3 despliegue en bucket independiente
+>- Cuenta IAM agregarle
+>- agregar politica directamente AmazonS3ReadOnlyAccess IAM 
+>- agregar politica directamente AmazonS3FullAccess IAM 
+>- aws s3 ls --profile myprofile 
+>- aws sts get-caller-identity 
+>- aws s3 sync dist/ s3://mf-remoto --acl public-read 
+>- aws s3 sync dist/mf-remoto s3://mf-remoto 
+>- aws s3 ls s3://mf-remoto 
+>- aws s3 ls s3://tu-bucket --recursive | grep index.html 
+>- aws s3 cp dist/mf-remoto/index.html s3://mf-remoto/index.html 
+>- aws s3 sync dist/mf-remoto/ s3://mf-remoto
+Configurar cors en permisos 
+[ 
+  { 
+    "AllowedHeaders": ["*"], 
+    "AllowedMethods": ["GET"], 
+    "AllowedOrigins": ["*"], 
+    "ExposeHeaders": [] 
+  } 
+] 
+>- npm run build
+>- aws s3 sync dist/mf-host/ s3://mf-host 
+
+### comandos aws s3 despliegue en bucket compartido
+>- aws s3 sync dist/mf-host s3://mf-host-and-remote/
+
+### actualizar versión de angular
+>- ng update @angular/cli@19 @angular/core@19
+>- ng update @angular/cli@20 @angular/core@20
 
 
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.4.
 
-#### pendiente
-https://angular-maps.com/guides/getting-started/
-https://angular-maps.com/api-docs/agm-core/directives/agmpolygon
-npm install @agm/core
-#### si da error
-https://github.com/DefinitelyTyped/DefinitelyTyped/issues/48574
-npm install @types/googlemaps@3.39.12 --save-dev
-npm install @agm/core --save
-aun no funciona
-probar para el evento clic
-https://github.com/SebastianM/angular-google-maps/issues/1845
-npm install @agm/core@1.1.0 --save
+## Development server
 
-ng generate component geocerca-google
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-npm i @angular/material@9.2.1
-npm install @angular/cdk
+## Code scaffolding
 
-npm install rxjs
-npm install ngrx-store-persist
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-npm install @angular/http
-npm install @types/axios
-npm install angular-cli-ghpages
-npm install axios
+## Build
 
-npm install @ngrx/store@9.1.0
-npm install @ngrx/store-devtools@9.1.0
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-npm install jquery
-error https://stackoverflow.com/questions/50943024/bootstrap-not-working-with-my-angular-project
-se corrije en angular.json
-en "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
-            ]
+## Running unit tests
 
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-### ejemplo de geocerca teoria
-https://developers.google.com/location-context/geofencing/
+## Running end-to-end tests
 
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## instalar bootstrap en angular
-https://www.itsolutionstuff.com/post/install-bootstrap-4-in-angular-9-how-to-add-bootstrap-in-angular-9example.html
+## Further help
 
-
-## Actualizar angular
-https://update.angular.io/
-borrar el node_modules
-
-### bootstrap 4
-https://bootstrap-menu.com/_bootstrap4/detail-multilevel.html
-
-ng new angularoutes2
-angular-route
-axios
-ng serve
-ng generate component product-list
---luego de crear registrar en app modules
-
-## Routes en Angular 8
-https://www.techiediaries.com/angular-router/
-https://www.techiediaries.com/angular-routing-tutorial/
-
-
-# Redux
-https://www.youtube.com/watch?v=uLZ-_4_qlPg
-
-
- ng generate component reducers-component
-
-ng generate component products-component
-
-
-### Api Rest Angular 8
-npm install --save angular-in-memory-web-api
-$ ng generate service data
-$ ng generate service product 
-Next, open the src/app/product.service.ts
-
-ng generate class product
-
-$ ng generate component product-list
-$ ng generate component product-detail
-
-
-#### este es el que funciona
->- ng build --configuration production --base-href=https://programacionparaaprender.github.io/mi-pagina-web2/
->- echo > dist/mi-pagina-web2/.nojekyll
->- npx gh-pages -d dist/mi-pagina-web2
-
-
-#### pendiente
->- ng build --configuration production --base-href=https://programacionparaaprender.github.io/mi-pagina-web2/
->- ng deploy --base-href=https://programacionparaaprender.github.io/mi-pagina-web2/
->- echo > dist/mi-pagina-web2/.nojekyll
->- npm install gh-pages --save-dev --legacy-peer-deps
->- npx gh-pages -d dist/mi-pagina-web2
-
-npx angular-cli-ghpages —dir=dist/mi-pagina-web2
-
-ng build --base-href=/mi-pagina-web2/
-
-ng build --base-href=/
-
-
-### Estados persistentes
-https://www.npmjs.com/package/ngrx-store-persist
-
-
-
-### Peticiones más sencillas
-https://www.npmjs.com/package/axios
-npm install @types/axios
-npm install --save axios
-
-
-
-
-
-
-### Pediente el login
-https://ngrx.io/guide/store/selectors
-https://angular-2-training-book.rangle.io/state-management/ngrx/reading_your_application_state_using_selectors
-
-
-
-
-
-
-
-
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

@@ -11,10 +11,13 @@ import { map } from 'rxjs/operators';
 
 
 import { experiencia_luis, contactosjs, emprender_internetjs, trabajo_grado_luis, proyectos_realizados_luis, proyectos } from './../app.state';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-contacto-juan',
+  standalone:true,
+  imports:[CommonModule],
   templateUrl: './contacto-juan.component.html',
   styleUrls: ['./contacto-juan.component.css']
 })
@@ -27,7 +30,7 @@ export class ContactoJuanComponent implements OnInit {
     experiencia_luis = experiencia_luis;
     proyectos_realizados_luis = proyectos_realizados_luis;
     proyectos = proyectos;
-    tecnologia:[];
+    tecnologia = [];
     constructor(private router: Router) { 
     
 

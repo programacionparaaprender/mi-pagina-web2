@@ -11,3 +11,9 @@ agm-map {
     text-decoration: none;
     
   }
+
+  .banner{
+      background: url(../../assets/images/banner\ web2.jpg);
+      height: 30rem;
+      width: 100%;
+    }

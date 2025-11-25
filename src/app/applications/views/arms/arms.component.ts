@@ -3,6 +3,7 @@ import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-arms',
+  standalone:true,
   templateUrl: './arms.component.html',
   styleUrls: ['./arms.component.css']
 })

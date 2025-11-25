@@ -1,21 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-
-//import { LatLng, LatLngLiteral, PolyMouseEvent } from '../services/google-maps-types';
- 
-
 import { Router } from '@angular/router';
-
-import { AppState } from './../app.state';
+import { AppState } from '../app.state';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { Tio } from '../models/tio';
-
-
-import { experiencia_luis, contactosjs, emprender_internetjs, trabajo_grado_luis, proyectos_realizados_luis, proyectos } from './../app.state';
+import { experiencia_luis, contactosjs, emprender_internetjs, trabajo_grado_luis, proyectos_realizados_luis, proyectos } from '../app.state';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-contacto-luis',
+  standalone:true,
+  imports:[CommonModule],
   templateUrl: './contacto-luis.component.html',
   styleUrls: ['./contacto-luis.component.css']
 })
@@ -28,9 +23,12 @@ export class ContactoLuisComponent implements OnInit {
     experiencia_luis = experiencia_luis;
     proyectos_realizados_luis = proyectos_realizados_luis;
     proyectos = proyectos;
-    tecnologia:[{porcentaje:100}];
+    tecnologia = [{porcentaje:100}];
     constructor(private router: Router) { 
     
+
+    }
+    obtenerDetalleExperiencia(id:number){
 
     }
     obtenerDetalleTrabajoGrado(id:any):void{
@@ -38,6 +36,18 @@ export class ContactoLuisComponent implements OnInit {
     }
     ngOnInit(): void {
     }
+
+    obtenerDetalle(id:number): void{
+      console.log('obtenerDetalle')
+      var proyecto:any;
+      for(let proyecto2 of this.proyectos_realizados_luis){
+              if(proyecto2.id == id){
+                      proyecto = proyecto2;
+              }
+      }
+      this.tecnologia = proyecto.tecnologia;
+      
+  };
 
   
 }

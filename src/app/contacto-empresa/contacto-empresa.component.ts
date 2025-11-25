@@ -1,20 +1,14 @@
 import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
-
-import { AppState } from './../app.state';
-
+import { AppState } from '../app.state';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { Tio } from '../models/tio';
 import { ActivatedRoute, Router } from '@angular/router';
-
-
-
 import { Location } from "@angular/common";
-
-import { cursosjs, experiencia_luis, contactosjs, emprender_internetjs, trabajo_grado_luis, proyectos_realizados_luis, proyectos } from './../app.state';
+import { cursosjs, experiencia_luis, contactosjs, emprender_internetjs, trabajo_grado_luis, proyectos_realizados_luis, proyectos } from '../app.state';
 
 
 @Component({
+  standalone:true,
   selector: 'app-contacto-empresa',
   templateUrl: './contacto-empresa.component.html',
   styleUrls: ['./contacto-empresa.component.css']
@@ -24,8 +18,6 @@ import { cursosjs, experiencia_luis, contactosjs, emprender_internetjs, trabajo_
 export class ContactoEmpresaComponent implements OnInit {
   //@ViewChild(LoginUsuariosComponent) child;
   contactosjs = contactosjs;
-  login: Observable<Tio[]>;
-  tio: Tio;
   nombre = '';
   email = 'zddfdfdsfd';
   password = '';

@@ -1,95 +1,67 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-vieja',
+  standalone: true,
   templateUrl: './vieja.component.html',
   styleUrls: ['./vieja.component.css']
 })
-export class ViejaComponent implements OnInit {
+export class ViejaComponent {
+
   quiengano = 'Next player: X';
-  squares = Array<String>(9).fill(null);
-  hayganador = 0;
-    contador = 0;
-    history = [
-      {
-        squares:Array<String>(9).fill(null)
-      }
-    ];
-    stepNumber = 0;
-    xIsNext = true;
 
-  constructor() {
-    //this.state.hayganador = 0;
-    //this.state.xIsNext = true;
-    //this.state.contador = 0;
-    //this.state.stepNumber = 0;
-    //var squares = [null,null,null,null,null,null,null,null,null];//Array<String>(9).fill(null);
-    //this.state.history.push(squares);
-   }
+  // Ahora acepta string | null
+  squares: (string | null)[] = Array(9).fill(null);
 
-  ngOnInit() {
-    /* var squares = [null,null,null,null,null,null,null,null,null];//Array<String>(9).fill(null);
-    this.state.history.push(squares); */
-  }
+  history: { squares: (string | null)[] }[] = [
+    { squares: Array(9).fill(null) }
+  ];
 
-  quiengano2(){
-    const squares = this.history[this.stepNumber];
-  if (this.hayganador == 1) {
-    return 'Winner: ' + (this.xIsNext ? 'O' : 'X');
-  } else {
+  stepNumber = 0;
+  xIsNext = true;
+  hayganador = false;
+
+  constructor() {}
+
+  get status(): string {
+    if (this.hayganador) {
+      return 'Winner: ' + (this.xIsNext ? 'O' : 'X');
+    }
     return 'Next player: ' + (this.xIsNext ? 'X' : 'O');
   }
-  }
 
-  mostrarSquares(i)
-  { 
-    /* const current = this.history[history.length - 1];
-    return current.squares[i] == null ? ' ':current.squares[i].toString(); */
+  mostrarSquares(i: number): string | null {
     return this.squares[i];
   }
 
-  handleClick(i) {
-    this.quiengano = this.quiengano2();
-    if(this.hayganador == 1){
+  handleClick(i: number): void {
+    if (this.hayganador || this.squares[i]) {
       return;
     }
-    
-    //console.log(i);
-    
-    //console.log(this.squares[i])
-    const history = this.history.slice(0, this.stepNumber + 1);
-    //const current = history[history.length - 1];
-    //const squares = current.squares.slice();
-    const squares = this.squares.slice();
-    const caracter = this.xIsNext ? 'X' : 'O';
-    this.squares[i] = caracter.toString();
-    //this.state.history.push({squares: squares});
-    //this.state.stepNumber++;
 
-    this.history = history.concat([{ squares: squares }]),
+    const history = this.history.slice(0, this.stepNumber + 1);
+    const current = history[history.length - 1];
+    const squares = [...current.squares];
+
+    squares[i] = this.xIsNext ? 'X' : 'O';
+
+    this.history = history.concat([{ squares }]);
     this.stepNumber = history.length;
+    this.squares = squares;
     this.xIsNext = !this.xIsNext;
 
-    console.log(this.squares);
+    const winner = this.calculateWinner(squares);
+    this.hayganador = !!winner;
+  }
 
-    if (this.calculateWinner(this.squares) ) {
-      this.hayganador = 1;
-    }else{
-      this.hayganador = 0;
-    }
-    
-}
-jumpTo(step) {
-  this.stepNumber = 0;
-    this.xIsNext = (step % 2) === 0;
-    this.squares = this.history[step].squares;
-    this.history = [
-      {
-        squares:Array<String>(9).fill(null)
-      }
-    ];
-}
-  calculateWinner(squares) {
+  jumpTo(step: number): void {
+    this.stepNumber = step;
+    this.squares = [...this.history[step].squares];
+    this.xIsNext = step % 2 === 0;
+    this.hayganador = !!this.calculateWinner(this.squares);
+  }
+
+  calculateWinner(squares: (string | null)[]): string | null {
     const lines = [
       [0, 1, 2],
       [3, 4, 5],
@@ -100,13 +72,17 @@ jumpTo(step) {
       [0, 4, 8],
       [2, 4, 6],
     ];
-    for (let i = 0; i < lines.length; i++) {
-      const [a, b, c] = lines[i];
-      if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+
+    for (let [a, b, c] of lines) {
+      if (
+        squares[a] &&
+        squares[a] === squares[b] &&
+        squares[a] === squares[c]
+      ) {
         return squares[a];
       }
     }
+
     return null;
   }
-
 }

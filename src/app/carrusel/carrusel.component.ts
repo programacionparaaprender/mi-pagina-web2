@@ -5,6 +5,7 @@ import { serviciosjs, cursosjs, experiencia_luis, contactosjs, emprender_interne
 
 @Component({
   selector: 'app-carrusel',
+  standalone:true,
   templateUrl: './carrusel.component.html',
   styleUrls: ['./carrusel.component.css']
 })

@@ -1,9 +1,7 @@
-
-import { Tio } from './models/tio'
 export interface AppState {
   //readonly tasks: Task[];
-  readonly tios: Tio[];
-  readonly login: Tio[];
+
+
 }
 export const serviciosjs = [
     {
