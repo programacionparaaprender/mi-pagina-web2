@@ -22,11 +22,15 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
           <li class="nav-item">
-            <a class="nav-link active" routerLink="/">Inicio</a>
+            <a class="nav-link active" routerLink="/">
+              {{ 'inicio' | translate }}
+            </a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link active" routerLink="/maestria-sanmarcos">Maestría</a>
+            <a class="nav-link active" routerLink="/maestria-sanmarcos">
+              {{ 'maestria' | translate }}
+            </a>
           </li>
 
           <!-- Dropdown Exercises -->
@@ -195,20 +199,29 @@
 
         </ul>
 
-        <!-- Search Form -->
-        <form class="d-flex fst-italic">
-          <input 
-            id="iBuscar"
-            name="nBuscar"
-            class="form-control me-2 fst-italic"
-            type="search"
-            placeholder="Buscar">
-          <button 
-            class="btn btn-outline-secondary fst-italic"
-            type="submit">
+        <!-- ===== BUSCADOR ===== -->
+        <form class="d-flex fst-italic me-3">
+          <input id="iBuscar" name="nBuscar" class="form-control me-2 fst-italic"
+                 type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-secondary fst-italic" type="submit">
             Buscar
           </button>
         </form>
+
+         <!-- ===== SELECTOR DE IDIOMA ===== -->
+        <div class="d-flex align-items-center">
+          <select #langSelect class="form-select form-select-sm bg-dark text-white border-secondary"
+                  (change)="cambiarLang(langSelect.value)"
+                  style="width: 120px;">
+
+            @for (lang of langs; track lang) {
+              <option [value]="lang">
+                {{ lang | uppercase }}
+              </option>
+            }
+
+          </select>
+        </div>
 
       </div>
     </div>

@@ -11,17 +11,6 @@ import { localStorageSync } from 'ngrx-store-localstorage';
 import {provideTranslateService, TranslateService} from "@ngx-translate/core";
 import {provideTranslateHttpLoader} from "@ngx-translate/http-loader";
 
-export function localStorageSyncReducer(
-  reducer: ActionReducer<any>
-): ActionReducer<any> {
-  return localStorageSync({
-    keys: ['exampleState', 'counterState', 'productState','userState'],
-    rehydrate: true,
-  })(reducer);
-}
-
-const metaReducers: Array<MetaReducer<any, any>> = [localStorageSyncReducer];
-
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -29,8 +18,8 @@ export const appConfig: ApplicationConfig = {
     provideZoneChangeDetection({ eventCoalescing: true }), 
     provideRouter(routes),
     provideTranslateService({
-      lang: 'en',
-      fallbackLang: 'en',
+      lang: 'es',
+      fallbackLang: 'es',
       loader: provideTranslateHttpLoader({
         prefix: '/i18n/',
         suffix: '.json'
