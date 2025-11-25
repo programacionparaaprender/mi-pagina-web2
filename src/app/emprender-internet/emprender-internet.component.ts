@@ -3,13 +3,13 @@ import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { emprender_internetjs } from '../app.state';
-import { CommonModule } from '@angular/common';
+
 
 
 @Component({
   standalone:true,
   selector: 'app-emprender-internet',
-  imports:[CommonModule],
+  imports: [],
   templateUrl: './emprender-internet.component.html',
   styleUrls: ['./emprender-internet.component.css']
 })

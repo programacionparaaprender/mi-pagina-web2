@@ -4,13 +4,13 @@ import { AppState } from '../app.state';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { experiencia_luis, contactosjs, emprender_internetjs, trabajo_grado_luis, proyectos_realizados_luis, proyectos } from '../app.state';
-import { CommonModule } from '@angular/common';
+
 
 
 @Component({
   selector: 'app-contacto-luis',
   standalone:true,
-  imports:[CommonModule],
+  imports: [],
   templateUrl: './contacto-luis.component.html',
   styleUrls: ['./contacto-luis.component.css']
 })

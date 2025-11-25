@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { ActivatedRoute, Router } from '@angular/router';
-import { CommonModule, Location } from "@angular/common";
+import { Location } from "@angular/common";
 import { cursosjs, experiencia_luis, contactosjs, emprender_internetjs, trabajo_grado_luis, proyectos_realizados_luis, proyectos } from '../app.state';
 
 
@@ -10,7 +10,7 @@ import { cursosjs, experiencia_luis, contactosjs, emprender_internetjs, trabajo_
   selector: 'app-footer',
   templateUrl: './footer.component.html',
   standalone:true,
-  imports:[CommonModule],
+  imports: [],
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {

@@ -11,13 +11,13 @@ import { map } from 'rxjs/operators';
 
 
 import { experiencia_luis, contactosjs, emprender_internetjs, trabajo_grado_luis, proyectos_realizados_luis, proyectos } from './../app.state';
-import { CommonModule } from '@angular/common';
+
 
 
 @Component({
   selector: 'app-contacto-juan',
   standalone:true,
-  imports:[CommonModule],
+  imports: [],
   templateUrl: './contacto-juan.component.html',
   styleUrls: ['./contacto-juan.component.css']
 })
