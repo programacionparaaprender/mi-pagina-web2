@@ -38,9 +38,6 @@ export const routes: Routes = [
   {path: 'contacto_jermany' , component: ContactoJermanyComponent},
   {path: 'contacto_anmary' , component: ContactoAnmaryComponent},
   {path: 'contacto' , component: ContactoEmpresaComponent},
-  { path: 'component' , component: MyComponentComponent},
-  { path: 'list-products' , component: ListProductsComponent},
-  { path: 'list-users' , component: ListUserComponent},
   {
           path: 'vieja',
           loadComponent: () =>
@@ -51,5 +48,27 @@ export const routes: Routes = [
               remoteEntry: 'https://programacionparaaprender.github.io/mf-remoto/remoteEntry.js',
               exposedModule: './ViejaComponent',
             }).then((m) => m.ViejaComponent),
+    },
+  {
+          path: 'component',
+          loadComponent: () =>
+            loadRemoteModule({
+              type: 'module',
+              //remoteEntry: 'http://localhost:4201/remoteEntry.js',
+              //remoteEntry: 'https://mf-remoto.netlify.app/remoteEntry.js',
+              remoteEntry: 'https://programacionparaaprender.github.io/mf-remoto/remoteEntry.js',
+              exposedModule: './MyComponentComponent',
+            }).then((m) => m.MyComponentComponent),
+    },
+  {
+          path: 'list-users',
+          loadComponent: () =>
+            loadRemoteModule({
+              type: 'module',
+              //remoteEntry: 'http://localhost:4201/remoteEntry.js',
+              //remoteEntry: 'https://mf-remoto.netlify.app/remoteEntry.js',
+              remoteEntry: 'https://programacionparaaprender.github.io/mf-remoto/remoteEntry.js',
+              exposedModule: './ListUserComponent',
+            }).then((m) => m.ListUserComponent),
     }
 ];
