@@ -93,6 +93,14 @@ export const serviciosjs = [
     nombre:"Redes sociales",
     descripcion:"Integración a redes sociales y botón de whatsapp."
 },
+{
+    nombre:"Microservicios",
+    descripcion:"Integración a arquitectura de aplicaciones microservicios actualizado."
+},
+{
+    nombre:"Microfrontend",
+    descripcion:"Integración a arquitectura de aplicaciones microfrontend actualizado."
+},
 ];
 export const cursosjs = [
     {
@@ -100,19 +108,7 @@ export const cursosjs = [
         class:"dropdown-item",
         href:"emprender",
         nombre:"Emprender por internet"
-    },
-    { 
-              target:"_blank", 
-              class:"dropdown-item", 
-              href:"https://www.instagram.com/p/CK1OWPGnd3m/",
-              nombre:"Geocercas con el lenguaje kotlin y google maps"
-    },
-    {
-        target:"_blank",
-        class:"dropdown-item",
-        href:"https://www.instagram.com/p/CKrHNDmn-8s/",
-        nombre:"Geocerca Ionic"
-    },
+    }
   ];
 
 export const ventas_madrejs = [
@@ -141,97 +137,18 @@ export const experiencia_luis = [
       id:1,
       href:"https://www.facebook.com/SeidorPeru",
       src:"./assets/images/seidor.png" ,
-      nombre:"Desarrollo de software con los lenguajes c#, server-script y sql hana, aplicación sap business one",
+      nombre:"Desarrollo de software web microfrontend",
       tecnologia:[
           {
               id:1,
-              nombre:"C#",
-              porcentaje:80,
+              nombre:"typescript",
+              porcentaje:60,
           },
           {
               id:2,
-              nombre:"server-javascript",
-              porcentaje:60,
-          },
-          {
-              id:3,
-              nombre:"sql hana",
-              porcentaje:60,
-          },
-          {
-              id:4,
-              nombre:"sap business one client",
-              porcentaje:80,
-          },
-          {
-              id:5,
-              nombre:"sap business one studio",
-              porcentaje:60,
-          },
-          {
-              id:6,
-              nombre:"sap hana studio",
+              nombre:"angular",
               porcentaje:80,
           }
-      ],
-  },
-  
-  {
-      id:2,
-      href:"https://www.facebook.com/Ricana-Tours-107912725995677/",
-      src:"./assets/proyectos/ricana-tours.svg" ,
-      nombre:"Desarrollo de software con los lenguajes javascript, php5, css3 y html5",
-      tecnologia:[
-          {
-              id:1,
-              nombre:"bash",
-              porcentaje:10,
-          },
-          {
-              id:2,
-              nombre:"php",
-              porcentaje:10,
-          },
-          {
-              id:3,
-              nombre:"javascript",
-              porcentaje:10,
-          },
-          {
-              id:4,
-              nombre:"css",
-              porcentaje:10,
-          },
-          {
-              id:5,
-              nombre:"bootstrap",
-              porcentaje:10,
-          },
-          {
-              id:6,
-              nombre:"jquery",
-              porcentaje:10,
-          },
-          {
-              id:7,
-              nombre:"codeigniter",
-              porcentaje:10,
-          },
-          {
-              id:8,
-              nombre:"git",
-              porcentaje:10,
-          },
-          {
-              id:9,
-              nombre:"UML",
-              porcentaje:10,
-          },
-          {
-              id:7,
-              nombre:"cakePHP",
-              porcentaje:10,
-          },
       ],
   },
   {
@@ -411,7 +328,7 @@ export const proyectos_realizados_luis = [
         id:1,
         href:"#",
         src:"./assets/proyectos/ricana-tours.svg" ,
-        nombre:"Aplicación web con primefaces para venta de boletos de viaje",
+        nombre:"Aplicación web microfrontend",
         tecnologia:[
             {
                 id:2,
@@ -460,162 +377,11 @@ export const proyectos_realizados_luis = [
             }
         ],
     },
-    {
-        id:2,
-        href:"#",
-        src:"./assets/proyectos/ricana-tours.svg" ,
-        nombre:"Aplicación web con laravel para clinica",
-        tecnologia:[
-            {
-                id:1,
-                nombre:"bash",
-                porcentaje:10,
-            },
-            {
-                id:2,
-                nombre:"php",
-                porcentaje:10,
-            },
-            {
-                id:3,
-                nombre:"javascript",
-                porcentaje:10,
-            },
-            {
-                id:4,
-                nombre:"css",
-                porcentaje:10,
-            },
-            {
-                id:5,
-                nombre:"bootstrap",
-                porcentaje:10,
-            },
-            {
-                id:6,
-                nombre:"jquery",
-                porcentaje:10,
-            },
-            {
-                id:7,
-                nombre:"laravel",
-                porcentaje:10,
-            },
-            {
-                id:8,
-                nombre:"git",
-                porcentaje:20,
-            }
-        ],
-    },
-{
-    id:3,
-    href:"https://www.facebook.com/Ricana-Tours-107912725995677/",
-    src:"./assets/proyectos/ricana-tours.svg" ,
-    nombre:"Aplicación web con codeigniter en ricana tours",
-    tecnologia:[
-        {
-            id:1,
-            nombre:"bash",
-            porcentaje:10,
-        },
-        {
-            id:2,
-            nombre:"php",
-            porcentaje:10,
-        },
-        {
-            id:3,
-            nombre:"javascript",
-            porcentaje:10,
-        },
-        {
-            id:4,
-            nombre:"css",
-            porcentaje:10,
-        },
-        {
-            id:5,
-            nombre:"bootstrap",
-            porcentaje:10,
-        },
-        {
-            id:6,
-            nombre:"jquery",
-            porcentaje:10,
-        },
-        {
-            id:7,
-            nombre:"codeigniter",
-            porcentaje:10,
-        },
-        {
-            id:8,
-            nombre:"git",
-            porcentaje:20,
-        },
-        {
-            id:9,
-            nombre:"UML",
-            porcentaje:10,
-        },
-    ],
-},
-{
-    id:4,
-    href:"https://www.facebook.com/Ricana-Tours-107912725995677/",
-    src:"./assets/proyectos/ricana-tours.svg", 
-    nombre:"Aplicación web con cakePHP en ricana tours",
-    tecnologia:[
-        {
-            nombre:"bash",
-            porcentaje:60,
-        },
-    ],
-},
-{
-    id:5,
-    href:"https://www.facebook.com/PdvsaROriente/",
-    src:"./assets/proyectos/pdvsa.svg",
-    nombre:"Migración del servicio de impresión a tecnología tecnología de información libre",
-    tecnologia:[
-        {
-            id:1,
-            nombre:"bash",
-            porcentaje:40,
-        },
-        {
-            id:2,
-            nombre:"samba",
-            porcentaje:20,
-        },
-        {
-            id:3,
-            nombre:"cups",
-            porcentaje:20,
-        },
-        {
-            id:4,
-            nombre:"Debian",
-            porcentaje:20,
-        },
-    ],
-},
 ];
 export const proyectos = [
     {
-        nombre:"Geocercas con el lenguaje kotlin y google maps",
+        nombre:"Microfrontend host",
         imagen:"./assets/proyectos/kotlinmaps.png",
-        url:"https://www.instagram.com/p/CK1OWPGnd3m/"
-    },
-    {
-        nombre:"Geocercas con los frameworks ionic y angular",
-        imagen:"./assets/proyectos/geocercaionic.png",
-        url:"https://www.instagram.com/p/CKrHNDmn-8s/"
-    },
-    {
-        nombre:"Geocercas con los frameworks nativescript, vuejs y google maps api",
-        imagen:"./assets/proyectos/tns-geocerca.png",
-        url:"https://www.instagram.com/p/CK9FdpJH96N/"
+        url:"https://www.instagram.com/p/DRa2ZlODE2s/"
     },
 ];
