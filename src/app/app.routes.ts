@@ -35,7 +35,6 @@ export const routes: Routes = [
   {path: 'contacto_jermany' , component: ContactoJermanyComponent},
   {path: 'contacto_anmary' , component: ContactoAnmaryComponent},
   {path: 'contacto' , component: ContactoEmpresaComponent},
-  {path: 'vieja' , component: ViejaComponent},
   {
           path: 'vieja',
           loadComponent: () =>
