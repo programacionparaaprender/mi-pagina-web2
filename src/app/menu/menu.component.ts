@@ -7,7 +7,6 @@ import { cursosjs, experiencia_luis, contactosjs, emprender_internetjs, trabajo_
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 
-
 @Component({
   selector: 'app-menu',
   standalone:true,

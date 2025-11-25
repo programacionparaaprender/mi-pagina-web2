@@ -36,15 +36,15 @@ export const routes: Routes = [
   {path: 'contacto_anmary' , component: ContactoAnmaryComponent},
   {path: 'contacto' , component: ContactoEmpresaComponent},
   {path: 'vieja' , component: ViejaComponent},
-    /* {
+  {
           path: 'vieja',
           loadComponent: () =>
             loadRemoteModule({
               type: 'module',
               //remoteEntry: 'http://localhost:4201/remoteEntry.js',
-              remoteEntry: 'https://mf-remoto.netlify.app/remoteEntry.js',
+              //remoteEntry: 'https://mf-remoto.netlify.app/remoteEntry.js',
+              remoteEntry: 'https://programacionparaaprender.github.io/mf-remoto/remoteEntry.js',
               exposedModule: './ViejaComponent',
             }).then((m) => m.ViejaComponent),
-    } */
-    
+    }
 ];
