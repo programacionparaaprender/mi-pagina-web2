@@ -11,7 +11,7 @@ import { environment } from '../environments/environment';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 
 
 
@@ -73,50 +73,42 @@ import { MenuNuevoComponent } from './menu-nuevo/menu-nuevo.component';
 import { MasterAspNetComponent } from './master-aspnet/master-aspnet.component';
 import { RouterModule } from '@angular/router';
 import { ContactoAnmaryComponent } from './contacto-anmary/contacto-anmary.component';
-@NgModule({
-  declarations: [
-    ContactoAnmaryComponent,
-    MainComponent,
-    MenuNuevoComponent,
-    MasterAspNetComponent,
-    ContadorAutomaticoComponent,
-    QuarkusComponent,
-    AppComponent,
-    ViejaComponent,
-    MenuComponent,
-    MenuNuevoComponent,
-    EmprenderInternetComponent,
-    AgenciaEmpresasComponent,
-    AgenciaProfesionalesComponent,
-    AgenciaEmprendedoresComponent,
-    ContactoLuisComponent,
-    ContactoPercyComponent,
-    FooterComponent,
-    ContactoEmpresaComponent,
-    ContactoJuanComponent,
-    ContactoYolandaComponent,
-    ContactoPatriciaComponent,
-    ContactoAnaComponent,
-    ContactoJermanyComponent,
-    MainComponent,
-    BannerComponent,
-    ServiciosContactoComponent,
-    CarruselComponent,
-    NosotrosComponent,
-    ProyectosComponent,
-    MaestriaSanMarcosComponent
-  ],
-  imports: [
-    
-    RouterModule,
-    FormsModule,
-    ReactiveFormsModule,
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    HttpClientModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        ContactoAnmaryComponent,
+        MainComponent,
+        MenuNuevoComponent,
+        MasterAspNetComponent,
+        ContadorAutomaticoComponent,
+        QuarkusComponent,
+        AppComponent,
+        ViejaComponent,
+        MenuComponent,
+        MenuNuevoComponent,
+        EmprenderInternetComponent,
+        AgenciaEmpresasComponent,
+        AgenciaProfesionalesComponent,
+        AgenciaEmprendedoresComponent,
+        ContactoLuisComponent,
+        ContactoPercyComponent,
+        FooterComponent,
+        ContactoEmpresaComponent,
+        ContactoJuanComponent,
+        ContactoYolandaComponent,
+        ContactoPatriciaComponent,
+        ContactoAnaComponent,
+        ContactoJermanyComponent,
+        MainComponent,
+        BannerComponent,
+        ServiciosContactoComponent,
+        CarruselComponent,
+        NosotrosComponent,
+        ProyectosComponent,
+        MaestriaSanMarcosComponent
+    ],
+    bootstrap: [AppComponent], imports: [RouterModule,
+        FormsModule,
+        ReactiveFormsModule,
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule { }
