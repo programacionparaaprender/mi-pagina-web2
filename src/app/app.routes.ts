@@ -17,6 +17,9 @@ import { MaestriaSanMarcosComponent } from './maestria-sanmarcos/maestria-sanmar
 import { ContadorAutomaticoComponent } from './contador-automatico/contador-automatico.component';
 import { ContactoAnmaryComponent } from './contacto-anmary/contacto-anmary.component';
 import { loadRemoteModule } from '@angular-architects/module-federation';
+import { ListProductsComponent } from './views/products/list-products/list-products.component';
+import { MyComponentComponent } from './views/my-component/my-component.component';
+import { ListUserComponent } from './views/users/list-users/list-users.component';
 
 export const routes: Routes = [
   { path: '' , component: MainComponent},
@@ -35,6 +38,9 @@ export const routes: Routes = [
   {path: 'contacto_jermany' , component: ContactoJermanyComponent},
   {path: 'contacto_anmary' , component: ContactoAnmaryComponent},
   {path: 'contacto' , component: ContactoEmpresaComponent},
+  { path: 'component' , component: MyComponentComponent},
+  { path: 'list-products' , component: ListProductsComponent},
+  { path: 'list-users' , component: ListUserComponent},
   {
           path: 'vieja',
           loadComponent: () =>
