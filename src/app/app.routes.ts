@@ -39,6 +39,17 @@ export const routes: Routes = [
   { path: 'contacto_anmary', component: ContactoAnmaryComponent },
   { path: 'contacto', component: ContactoEmpresaComponent },
   {
+    path: 'users',
+    loadComponent: () =>
+      loadRemoteModule({
+        type: 'module',
+        //remoteEntry: 'http://localhost:4201/remoteEntry.js',
+        //remoteEntry: 'https://mf-remoto.netlify.app/remoteEntry.js',
+        remoteEntry: 'https://programacionparaaprender.github.io/mf-remoto/remoteEntry.js',
+        exposedModule: './UsersComponent',
+      }).then((m) => m.UsersComponent),
+  },
+  {
     path: 'google',
     loadComponent: () =>
       loadRemoteModule({
