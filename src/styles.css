@@ -26,3 +26,34 @@ app-root {
 app-footer {
   margin-top: auto; /* Empuja el footer hacia abajo */
 }
+
+/* Tema claro */
+body.tema-claro {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Tema oscuro (por defecto) */
+body.tema-oscuro {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Además, puedes ajustar los estilos de los componentes de Bootstrap u otros elementos según el tema */
+body.tema-claro .navbar {
+  background-color: #f8f9fa !important;
+  color: #000000;
+}
+
+body.tema-claro .navbar a {
+  color: #000000;
+}
+
+body.tema-oscuro .navbar {
+  background-color: #343a40 !important;
+  color: #ffffff;
+}
+
+body.tema-oscuro .navbar a {
+  color: #ffffff;
+}

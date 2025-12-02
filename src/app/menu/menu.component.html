@@ -1,8 +1,12 @@
 <header class="container-fluid" style="font-style: italic;">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg fixed-top"
+    [class.navbar-light]="temaSeleccionado == 'tema-oscuro'"
+    [class.navbar-dark]="temaSeleccionado == 'tema-claro'"
+    [class.bg-light]="temaSeleccionado == 'tema-oscuro'"
+    [class.bg-dark]="temaSeleccionado == 'tema-claro'">
     <div class="container-fluid">
 
-      <a class="navbar-brand" routerLink="/">
+      <a class="navbar-brand" routerLink="/" routerLinkActive="active">
         <img src="./assets/images/principal.jpg" width="50" height="50" alt="">
       </a>
 
@@ -22,13 +26,13 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
           <li class="nav-item">
-            <a class="nav-link active" routerLink="/">
+            <a class="nav-link" routerLink="/" routerLinkActive="active">
               {{ 'inicio' | translate }}
             </a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link active" routerLink="/maestria-sanmarcos">
+            <a class="nav-link" routerLink="/maestria-sanmarcos" routerLinkActive="active">
               {{ 'maestria' | translate }}
             </a>
           </li>
@@ -43,9 +47,11 @@
               Java
             </a>
 
-            <ul class="dropdown-menu dropdown-menu-dark">
+            <ul class="dropdown-menu"
+              [class.dropdown-menu-dark]="temaSeleccionado == 'tema-oscuro'"
+              [class.dropdown-menu-light]="temaSeleccionado == 'tema-claro'">
+              <a class="dropdown-item" href="#" routerLinkActive="active">Spring cloud</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Spring cloud</a>
             </ul>
           </li>
 
@@ -60,28 +66,30 @@
               Angular
             </a>
 
-            <ul class="dropdown-menu dropdown-menu-dark">
-              <a class="dropdown-item" routerLink="/contador">Contador</a>
+            <ul class="dropdown-menu"
+              [class.dropdown-menu-dark]="temaSeleccionado == 'tema-oscuro'"
+              [class.dropdown-menu-light]="temaSeleccionado == 'tema-claro'">
+              <a class="dropdown-item" routerLink="/contador" routerLinkActive="active">Contador</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Directivas</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" routerLink="/vieja">Tic Tac Toe</a>
+              <a class="dropdown-item" routerLink="/vieja" routerLinkActive="active">Tic Tac Toe</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" routerLink="/component">Contador</a>
+              <a class="dropdown-item" routerLink="/component" routerLinkActive="active">Contador</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" routerLink="/list-users">Usuarios</a>
+              <a class="dropdown-item" routerLink="/list-users" routerLinkActive="active">Usuarios</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" routerLink="/google">Google Maps</a>
+              <a class="dropdown-item" routerLink="/google" routerLinkActive="active">Google Maps</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" routerLink="/users">
+              <a class="dropdown-item" routerLink="/users" routerLinkActive="active">
                 {{ 'users' | translate }}
               </a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" routerLink="/signals">
+              <a class="dropdown-item" routerLink="/signals" routerLinkActive="active">
                 {{ 'signals' | translate }}
               </a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" routerLink="/parent">
+              <a class="dropdown-item" routerLink="/parent" routerLinkActive="active">
                 {{ 'parent' | translate }}
               </a>
             </ul>
@@ -99,13 +107,15 @@
               Cursos
             </a>
 
-            <div class="dropdown-menu">
+            <div class="dropdown-menu"
+              [class.dropdown-menu-dark]="temaSeleccionado == 'tema-oscuro'"
+              [class.dropdown-menu-light]="temaSeleccionado == 'tema-claro'">
 
               @for (casa of cursosjs; track casa) {
                 <a 
                   class="dropdown-item"
                   [attr.target]="casa.target"
-                  [routerLink]="casa.href">
+                  [routerLink]="casa.href" routerLinkActive="active">
                   {{ casa.nombre }}
                 </a>
               }
@@ -124,13 +134,15 @@
               Proyectos
             </a>
 
-            <div class="dropdown-menu">
+            <div class="dropdown-menu"
+              [class.dropdown-menu-dark]="temaSeleccionado == 'tema-oscuro'"
+              [class.dropdown-menu-light]="temaSeleccionado == 'tema-claro'">
 
               @for (casa of proyectos_realizados_luis; track casa) {
                 <a 
                   class="dropdown-item"
                   target="_blank"
-                  [routerLink]="casa.href">
+                  [routerLink]="casa.href" routerLinkActive="active">
                   {{ casa.nombre }}
                 </a>
               }
@@ -149,12 +161,14 @@
               Contactos
             </a>
 
-            <div class="dropdown-menu">
+            <div class="dropdown-menu"
+              [class.dropdown-menu-dark]="temaSeleccionado == 'tema-oscuro'"
+              [class.dropdown-menu-light]="temaSeleccionado == 'tema-claro'">
 
               @for (casa of contactosjs; track casa) {
                 <a 
                   class="dropdown-item"
-                  [routerLink]="casa.href">
+                  [routerLink]="casa.href" routerLinkActive="active">
                   {{ casa.nombre }} - {{ casa.titulo }}
                 </a>
               }
@@ -163,7 +177,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" routerLink="/contacto">Acerca de</a>
+            <a class="nav-link" routerLink="/contacto" routerLinkActive="active">Acerca de</a>
           </li>
 
         </ul>
@@ -186,6 +200,22 @@
             @for (lang of langs; track lang) {
               <option [value]="lang">
                 {{ lang | uppercase }}
+              </option>
+            }
+
+          </select>
+        </div>
+
+        <!-- ===== SELECTOR DE TEMA ===== -->
+        <div class="d-flex align-items-center ms-3">
+          <select #temaSelect class="form-select form-select-sm bg-dark text-white border-secondary"
+                  [value]="temaSeleccionado"
+                  (change)="cambiarTema(temaSelect.value)"
+                  style="width: 120px;">
+
+            @for (tema of temas; track tema.valor) {
+              <option [value]="tema.valor" [selected]="temaSeleccionado == tema.valor">
+                {{ tema.etiqueta }}
               </option>
             }
 

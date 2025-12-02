@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterViewInit, Renderer2 } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
@@ -19,8 +19,6 @@ import { TranslatePipe, TranslateService } from '@ngx-translate/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-
-
   nombre = '';
   email = 'zddfdfdsfd';
   password = '';
@@ -30,7 +28,18 @@ export class MenuComponent implements OnInit {
   contactosjs = contactosjs;
   langs: string[] = [];
 
-  constructor(location: Location, private router: Router,
+
+
+temas = [
+    { valor: 'tema-claro', etiqueta: 'Tema Claro' },
+    { valor: 'tema-oscuro', etiqueta: 'Tema Oscuro' }
+  ];
+  temaSeleccionado: string = 'tema-oscuro'; // valor por defecto
+
+  constructor(
+    private renderer: Renderer2,
+    location: Location, 
+    private router: Router,
     public translate: TranslateService) {
     this.translate.setDefaultLang('es');
     this.translate.use('es');
@@ -43,16 +52,31 @@ export class MenuComponent implements OnInit {
     console.log(this.cursosjs)
   }
 
+  ngOnInit() {
+    // Al iniciar, aplicar el tema guardado en localStorage o el por defecto
+    const temaGuardado = localStorage.getItem('tema');
+    if (temaGuardado) {
+      this.temaSeleccionado = temaGuardado;
+    }
+    this.cambiarTema(this.temaSeleccionado);
+  }
+
+  cambiarTema(tema: string) {
+    this.temaSeleccionado = tema;
+    this.aplicarTema(tema);
+    localStorage.setItem('tema', tema);
+  }
+
+  aplicarTema(tema: string) {
+    // Remover las clases de tema anteriores
+    this.renderer.removeClass(document.body, 'tema-claro');
+    this.renderer.removeClass(document.body, 'tema-oscuro');
+    // Añadir la clase del tema actual
+    this.renderer.addClass(document.body, tema);
+  }
+
   cambiarLang(lang: string) {
     this.translate.use(lang);
   }
   
- 
-
-
-
-
-  ngOnInit() {
-  }
-
 }
