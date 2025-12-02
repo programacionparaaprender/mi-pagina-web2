@@ -9,5 +9,8 @@
     "Componente_local": "Local component",
     "Componente_remoto": "Remote component",
     "logout":"Logout",
-    "vieja":"Vieja"
+    "vieja":"Vieja",
+    "users":"Clean Arquitecture",
+    "signals":"Signals",
+    "parent":"Padre hijo nuevo"
 }
