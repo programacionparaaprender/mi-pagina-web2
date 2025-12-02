@@ -6,6 +6,8 @@
 ### curso de compodoc
 >- https://www.udemy.com/course/compodoc-crea-documentacion-en-angular-ionic/learn/lecture/13589698?components=add_to_cart%2Cbase_purchase_section%2Cbuy_button%2Ccacheable_buy_button%2Cdeal_badge%2Cdiscount_expiration%2Cgift_this_course%2Clifetime_access_context%2Cprice_text%2Cpurchase%2Cpurchase_tabs_context%2Crecommendation%2Credeem_coupon%2Cone_click_checkout#overview
 
+### curso nuevo angular 21
+>- https://www.udemy.com/course/domina-los-signals-en-angular-version-19/learn/lecture/48882171#overview
 
 ### documentar
 >- npm install -D @compodoc/compodoc

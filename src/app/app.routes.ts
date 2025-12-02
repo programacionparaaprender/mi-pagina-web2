@@ -83,7 +83,7 @@ export const routes: Routes = [
       }).then((m) => m.Signals),
   },
   {
-    path: 'signals',
+    path: 'parent',
     loadComponent: () =>
       loadRemoteModule({
         type: 'module',
