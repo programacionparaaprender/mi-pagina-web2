@@ -72,6 +72,28 @@ export const routes: Routes = [
       }).then((m) => m.ViejaComponent),
   },
   {
+    path: 'signals',
+    loadComponent: () =>
+      loadRemoteModule({
+        type: 'module',
+        //remoteEntry: 'http://localhost:4201/remoteEntry.js',
+        //remoteEntry: 'https://mf-remoto.netlify.app/remoteEntry.js',
+        remoteEntry: 'https://programacionparaaprender.github.io/mf-remoto/remoteEntry.js',
+        exposedModule: './Signals',
+      }).then((m) => m.Signals),
+  },
+  {
+    path: 'signals',
+    loadComponent: () =>
+      loadRemoteModule({
+        type: 'module',
+        //remoteEntry: 'http://localhost:4201/remoteEntry.js',
+        //remoteEntry: 'https://mf-remoto.netlify.app/remoteEntry.js',
+        remoteEntry: 'https://programacionparaaprender.github.io/mf-remoto/remoteEntry.js',
+        exposedModule: './ParentComponent',
+      }).then((m) => m.ParentComponent),
+  },
+  {
     path: 'component',
     loadComponent: () =>
       loadRemoteModule({

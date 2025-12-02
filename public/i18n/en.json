@@ -10,5 +10,7 @@
     "Componente_remoto": "Remote component",
     "logout":"Logout",
     "vieja":"Vieja",
-    "users":"Clean Arquitecture"
+    "users":"Clean Arquitecture",
+    "signals":"Signals",
+    "parent":"Padre hijo nuevo"
 }
