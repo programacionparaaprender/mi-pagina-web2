@@ -13,6 +13,7 @@ import { ContactoPatriciaComponent } from './contacto-patricia/contacto-patricia
 import { ContactoAnaComponent } from './contacto-ana/contacto-ana.component';
 import { ContactoJermanyComponent } from './contacto-jermany/contacto-jermany.component';
 import { MainComponent } from './main/main.component';
+import { HomeComponent } from './home/home.component';
 import { MaestriaSanMarcosComponent } from './maestria-sanmarcos/maestria-sanmarcos.component';
 import { ContadorAutomaticoComponent } from './contador-automatico/contador-automatico.component';
 import { ContactoAnmaryComponent } from './contacto-anmary/contacto-anmary.component';
@@ -23,9 +24,23 @@ import { ListUserComponent } from './views/users/list-users/list-users.component
 
 export const routes: Routes = [
   { path: '', component: MainComponent },
-  { path: 'maestria-sanmarcos', component: MaestriaSanMarcosComponent },
-  { path: 'contador', component: ContadorAutomaticoComponent },
-  { path: 'agencia_empresas', component: AgenciaEmpresasComponent },
+  { 
+    path: 'register', 
+    component: HomeComponent
+  },
+  { 
+    path: 'login', 
+    component: HomeComponent
+  },
+  { 
+    path: 'home', 
+    component: HomeComponent,
+    children: [
+      { path: 'maestria-sanmarcos', component: MaestriaSanMarcosComponent },
+      { path: 'contador', component: ContadorAutomaticoComponent },
+      { path: 'agencia_empresas', component: AgenciaEmpresasComponent },
+    ]
+  },
   { path: 'agencia_profesionales', component: AgenciaProfesionalesComponent },
   { path: 'agencia_emprendedores', component: AgenciaEmprendedoresComponent },
   { path: 'emprender', component: EmprenderInternetComponent },

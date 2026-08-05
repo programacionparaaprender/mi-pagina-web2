@@ -32,7 +32,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" routerLink="/maestria-sanmarcos" routerLinkActive="active">
+            <a class="nav-link" routerLink="/home/maestria-sanmarcos" routerLinkActive="active">
               {{ 'maestria' | translate }}
             </a>
           </li>
@@ -69,7 +69,9 @@
             <ul class="dropdown-menu"
               [class.dropdown-menu-dark]="temaSeleccionado == 'tema-oscuro'"
               [class.dropdown-menu-light]="temaSeleccionado == 'tema-claro'">
-              <a class="dropdown-item" routerLink="/contador" routerLinkActive="active">Contador</a>
+              <a class="dropdown-item" routerLink="/home/contador" routerLinkActive="active">Contador</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" routerLink="/home/agencia_empresas">Agencia Empresas</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Directivas</a>
               <div class="dropdown-divider"></div>
