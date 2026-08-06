@@ -21,113 +21,116 @@ import { loadRemoteModule } from '@angular-architects/module-federation';
 import { ListProductsComponent } from './views/products/list-products/list-products.component';
 import { MyComponentComponent } from './views/my-component/my-component.component';
 import { ListUserComponent } from './views/users/list-users/list-users.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 
 export const routes: Routes = [
   { path: '', component: MainComponent },
-  { 
-    path: 'register', 
-    component: HomeComponent
+  {
+    path: 'register',
+    component: RegisterComponent,
   },
-  { 
-    path: 'login', 
-    component: HomeComponent
+  {
+    path: 'login',
+    component: LoginComponent,
   },
-  { 
-    path: 'home', 
+  {
+    path: 'home',
     component: HomeComponent,
     children: [
       { path: 'maestria-sanmarcos', component: MaestriaSanMarcosComponent },
       { path: 'contador', component: ContadorAutomaticoComponent },
       { path: 'agencia_empresas', component: AgenciaEmpresasComponent },
-    ]
-  },
-  { path: 'agencia_profesionales', component: AgenciaProfesionalesComponent },
-  { path: 'agencia_emprendedores', component: AgenciaEmprendedoresComponent },
-  { path: 'emprender', component: EmprenderInternetComponent },
-  { path: 'contacto_luis', component: ContactoLuisComponent },
-  { path: 'contacto_percy', component: ContactoPercyComponent },
-  { path: 'contacto_juan', component: ContactoJuanComponent },
-  { path: 'contacto_yolanda', component: ContactoYolandaComponent },
-  { path: 'contacto_patricia', component: ContactoPatriciaComponent },
-  { path: 'contacto_ana', component: ContactoAnaComponent },
-  { path: 'contacto_jermany', component: ContactoJermanyComponent },
-  { path: 'contacto_anmary', component: ContactoAnmaryComponent },
-  { path: 'contacto', component: ContactoEmpresaComponent },
-  {
-    path: 'users',
-    loadComponent: () =>
-      loadRemoteModule({
-        type: 'module',
-        //remoteEntry: 'http://localhost:4201/remoteEntry.js',
-        //remoteEntry: 'https://mf-remoto.netlify.app/remoteEntry.js',
-        remoteEntry: 'https://programacionparaaprender.github.io/mf-remoto/remoteEntry.js',
-        exposedModule: './UsersComponent',
-      }).then((m) => m.UsersComponent),
-  },
-  {
-    path: 'google',
-    loadComponent: () =>
-      loadRemoteModule({
-        type: 'module',
-        //remoteEntry: 'http://localhost:4201/remoteEntry.js',
-        //remoteEntry: 'https://mf-remoto.netlify.app/remoteEntry.js',
-        remoteEntry: 'https://programacionparaaprender.github.io/mf-google-maps/remoteEntry.js',
-        exposedModule: './GeocercaGoogleComponent',
-      }).then((m) => m.GeocercaGoogleComponent),
-  },
-  {
-    path: 'vieja',
-    loadComponent: () =>
-      loadRemoteModule({
-        type: 'module',
-        //remoteEntry: 'http://localhost:4201/remoteEntry.js',
-        //remoteEntry: 'https://mf-remoto.netlify.app/remoteEntry.js',
-        remoteEntry: 'https://programacionparaaprender.github.io/mf-remoto/remoteEntry.js',
-        exposedModule: './ViejaComponent',
-      }).then((m) => m.ViejaComponent),
-  },
-  {
-    path: 'signals',
-    loadComponent: () =>
-      loadRemoteModule({
-        type: 'module',
-        //remoteEntry: 'http://localhost:4201/remoteEntry.js',
-        //remoteEntry: 'https://mf-remoto.netlify.app/remoteEntry.js',
-        remoteEntry: 'https://programacionparaaprender.github.io/mf-remoto/remoteEntry.js',
-        exposedModule: './Signals',
-      }).then((m) => m.Signals),
-  },
-  {
-    path: 'parent',
-    loadComponent: () =>
-      loadRemoteModule({
-        type: 'module',
-        //remoteEntry: 'http://localhost:4201/remoteEntry.js',
-        //remoteEntry: 'https://mf-remoto.netlify.app/remoteEntry.js',
-        remoteEntry: 'https://programacionparaaprender.github.io/mf-remoto/remoteEntry.js',
-        exposedModule: './ParentComponent',
-      }).then((m) => m.ParentComponent),
-  },
-  {
-    path: 'component',
-    loadComponent: () =>
-      loadRemoteModule({
-        type: 'module',
-        //remoteEntry: 'http://localhost:4201/remoteEntry.js',
-        //remoteEntry: 'https://mf-remoto.netlify.app/remoteEntry.js',
-        remoteEntry: 'https://programacionparaaprender.github.io/mf-remoto/remoteEntry.js',
-        exposedModule: './MyComponentComponent',
-      }).then((m) => m.MyComponentComponent),
-  },
-  {
-    path: 'list-users',
-    loadComponent: () =>
-      loadRemoteModule({
-        type: 'module',
-        //remoteEntry: 'http://localhost:4201/remoteEntry.js',
-        //remoteEntry: 'https://mf-remoto.netlify.app/remoteEntry.js',
-        remoteEntry: 'https://programacionparaaprender.github.io/mf-remoto/remoteEntry.js',
-        exposedModule: './ListUserComponent',
-      }).then((m) => m.ListUserComponent),
+
+      { path: 'agencia_profesionales', component: AgenciaProfesionalesComponent },
+      { path: 'agencia_emprendedores', component: AgenciaEmprendedoresComponent },
+      { path: 'emprender', component: EmprenderInternetComponent },
+      { path: 'contacto_luis', component: ContactoLuisComponent },
+      { path: 'contacto_percy', component: ContactoPercyComponent },
+      { path: 'contacto_juan', component: ContactoJuanComponent },
+      { path: 'contacto_yolanda', component: ContactoYolandaComponent },
+      { path: 'contacto_patricia', component: ContactoPatriciaComponent },
+      { path: 'contacto_ana', component: ContactoAnaComponent },
+      { path: 'contacto_jermany', component: ContactoJermanyComponent },
+      { path: 'contacto_anmary', component: ContactoAnmaryComponent },
+      { path: 'contacto', component: ContactoEmpresaComponent },
+      {
+        path: 'users',
+        loadComponent: () =>
+          loadRemoteModule({
+            type: 'module',
+            //remoteEntry: 'http://localhost:4201/remoteEntry.js',
+            //remoteEntry: 'https://mf-remoto.netlify.app/remoteEntry.js',
+            remoteEntry: 'https://programacionparaaprender.github.io/mf-remoto/remoteEntry.js',
+            exposedModule: './UsersComponent',
+          }).then((m) => m.UsersComponent),
+      },
+      {
+        path: 'google',
+        loadComponent: () =>
+          loadRemoteModule({
+            type: 'module',
+            //remoteEntry: 'http://localhost:4201/remoteEntry.js',
+            //remoteEntry: 'https://mf-remoto.netlify.app/remoteEntry.js',
+            remoteEntry: 'https://programacionparaaprender.github.io/mf-google-maps/remoteEntry.js',
+            exposedModule: './GeocercaGoogleComponent',
+          }).then((m) => m.GeocercaGoogleComponent),
+      },
+      {
+        path: 'vieja',
+        loadComponent: () =>
+          loadRemoteModule({
+            type: 'module',
+            //remoteEntry: 'http://localhost:4201/remoteEntry.js',
+            //remoteEntry: 'https://mf-remoto.netlify.app/remoteEntry.js',
+            remoteEntry: 'https://programacionparaaprender.github.io/mf-remoto/remoteEntry.js',
+            exposedModule: './ViejaComponent',
+          }).then((m) => m.ViejaComponent),
+      },
+      {
+        path: 'signals',
+        loadComponent: () =>
+          loadRemoteModule({
+            type: 'module',
+            //remoteEntry: 'http://localhost:4201/remoteEntry.js',
+            //remoteEntry: 'https://mf-remoto.netlify.app/remoteEntry.js',
+            remoteEntry: 'https://programacionparaaprender.github.io/mf-remoto/remoteEntry.js',
+            exposedModule: './Signals',
+          }).then((m) => m.Signals),
+      },
+      {
+        path: 'parent',
+        loadComponent: () =>
+          loadRemoteModule({
+            type: 'module',
+            //remoteEntry: 'http://localhost:4201/remoteEntry.js',
+            //remoteEntry: 'https://mf-remoto.netlify.app/remoteEntry.js',
+            remoteEntry: 'https://programacionparaaprender.github.io/mf-remoto/remoteEntry.js',
+            exposedModule: './ParentComponent',
+          }).then((m) => m.ParentComponent),
+      },
+      {
+        path: 'component',
+        loadComponent: () =>
+          loadRemoteModule({
+            type: 'module',
+            //remoteEntry: 'http://localhost:4201/remoteEntry.js',
+            //remoteEntry: 'https://mf-remoto.netlify.app/remoteEntry.js',
+            remoteEntry: 'https://programacionparaaprender.github.io/mf-remoto/remoteEntry.js',
+            exposedModule: './MyComponentComponent',
+          }).then((m) => m.MyComponentComponent),
+      },
+      {
+        path: 'list-users',
+        loadComponent: () =>
+          loadRemoteModule({
+            type: 'module',
+            //remoteEntry: 'http://localhost:4201/remoteEntry.js',
+            //remoteEntry: 'https://mf-remoto.netlify.app/remoteEntry.js',
+            remoteEntry: 'https://programacionparaaprender.github.io/mf-remoto/remoteEntry.js',
+            exposedModule: './ListUserComponent',
+          }).then((m) => m.ListUserComponent),
+      },
+    ],
   },
 ];

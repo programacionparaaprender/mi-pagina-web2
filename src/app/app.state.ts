@@ -184,7 +184,7 @@ export const experiencia_luis = [
 export const contactosjs = [
   {
       id:1,
-      href:"contacto_luis",
+      href:"home/contacto_luis",
       img:"./assets/images/Luis_Correa.webp",
       alt:"Luis",
       nombre:"Luis Correa",
