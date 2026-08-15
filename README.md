@@ -57,7 +57,7 @@ Configurar cors en permisos
 ### actualizar versión de angular
 >- ng update @angular/cli@19 @angular/core@19
 >- ng update @angular/cli@20 @angular/core@20
-
+>- ng update @angular/cli@21 @angular/core@21
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.4.
 
